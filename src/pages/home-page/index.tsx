@@ -1,23 +1,27 @@
+import { useCallback, useState } from 'react';
+
+import { Footer } from '@/components/footer';
+import { Header } from '@/components/header';
+import { MobileMenu } from '@/components/mobile-menu';
+
 export default function HomePage() {
+	const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+	const toggleMobileMenu = useCallback(() => {
+		setOpenMobileMenu((state) => !state);
+	}, []);
+
 	return (
-		<main className='container mx-auto bg-fuchsia-300'>
-			<div className='text-xl flex gap-12 justify-between font-semibold py-6 uppercase'>
-				<div>CreaGang</div>
+		<>
+			<main className='container mx-auto'>
+				<MobileMenu />
 
-				<div>Graphic & Design</div>
+				<Header />
 
-				<div>Web development && Applications</div>
-
-				<div>About</div>
-
-				<div>Contact</div>
-			</div>
-
-			<div className='bg-black'>
-				<div className='border border-black flex flex-col text-left'>
-					<div className='px-3 py-6 border rounded-lg bg-white'>
-						<div>
-							<div className='text-7xl font-bold'>
+				<div className='bg-black'>
+					<div className='border border-black flex flex-col text-left'>
+						<div className='px-12 py-12 border rounded-3xl bg-white border-black '>
+							<div className='text-7xl lg:text-8xl font-bold'>
 								Make
 								<br className='inline' />
 								something
@@ -25,39 +29,44 @@ export default function HomePage() {
 								unique
 							</div>
 
-							<div className='flex gap-6'>
-								<button className='py-3 px-6 text-lg bg-gradient-to-bl from-[#f217ad] to-white rounded-lg'>
-									contact us
+							<div className='flex gap-24 pt-72'>
+								<button className='py-3 lg:px-24 px-12 bg-gradient-to-bl from-[#f217ad] to-white text-2xl rounded-3xl uppercase'>
+									contact
 								</button>
+							</div>
+						</div>
+						<div className='grid lg:grid-cols-3 text-2xl'>
+							<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48'>
+								<div>
+									We are very proactive and work to make your product even
+									better.
+								</div>
 
-								<div className='p-3 border rounded-full border-black'></div>
+								<div>Čokovoko</div>
+							</div>
+
+							<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48'>
+								<div>
+									The most experienced, specialized team across the industry.
+								</div>
+
+								<div>Work with us.</div>
+							</div>
+
+							<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48'>
+								<div>
+									We are very proactive and work to make your product even
+									better.
+								</div>
+
+								<div>Design</div>
 							</div>
 						</div>
 					</div>
 
-					<div className='grid lg:grid-cols-3'>
-						<div className='p-6 flex flex-col border rounded-lg bg-white'>
-							<div>
-								We are very proactive and work to make your product even better.
-							</div>
-
-							<div>Čokovoko</div>
-						</div>
-
-						<div className='p-6 flex flex-col border rounded-lg bg-white'>
-							<div>
-								The most experienced, specialized team across the industry.
-							</div>
-
-							<div>Work with us.</div>
-						</div>
-
-						<div className='p-6 flex flex-col border rounded-lg bg-white'>
-							<div>Design</div>
-						</div>
-					</div>
+					<Footer />
 				</div>
-			</div>
-		</main>
+			</main>
+		</>
 	);
 }
