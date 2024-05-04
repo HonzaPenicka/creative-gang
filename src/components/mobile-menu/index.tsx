@@ -11,7 +11,10 @@ export const MobileMenu: FunctionComponent = () => {
 	return (
 		<nav>
 			<div className='h-24 items-center flex justify-between lg:hidden'>
-				<div className='text-6xl'>CREAGANG</div>
+				<div className='w-28 justify-center items-center text-center'>
+					<img src='/pics/logo.svg' alt='logo' />
+				</div>
+
 				<div className='justify-end flex'>
 					<BurgerMenu />
 				</div>

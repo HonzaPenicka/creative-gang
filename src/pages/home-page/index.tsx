@@ -20,8 +20,11 @@ export default function HomePage() {
 
 				<div className='bg-black'>
 					<div className='border border-black flex flex-col text-left'>
-						<div className='px-12 py-12 border rounded-3xl bg-white border-black '>
-							<div className='text-7xl lg:text-8xl font-bold'>
+						<div
+							className='px-12 py-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content '
+							style={{ backgroundImage: 'url(/pics/bgcreagang3.png/)' }}
+						>
+							<div className='text-6xl lg:text-8xl font-bold'>
 								Make
 								<br className='inline' />
 								something
@@ -30,7 +33,7 @@ export default function HomePage() {
 							</div>
 
 							<div className='flex gap-24 pt-72'>
-								<button className='py-3 lg:px-24 px-12 bg-gradient-to-bl from-[#f217ad] to-white text-2xl rounded-3xl uppercase'>
+								<button className='py-3 lg:px-24 px-12 bg-gradient-to-bl from-[#6717f2] to-white text-2xl rounded-3xl uppercase'>
 									contact
 								</button>
 							</div>
