@@ -6,7 +6,7 @@ import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { MobileMenu } from '@/components/mobile-menu';
 
-export default function HomePage() {
+export default function DesignPage() {
 	const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
 	const toggleMobileMenu = useCallback(() => {

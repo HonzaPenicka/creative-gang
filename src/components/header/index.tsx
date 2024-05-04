@@ -7,7 +7,7 @@ export const Header: FunctionComponent = () => {
 				<img src='/pics/logo.svg' alt='logo' />
 			</div>
 
-			<div>Graphic & Design</div>
+			<a href='/design'>Graphic & Design</a>
 
 			<div>Web development && Applications</div>
 
