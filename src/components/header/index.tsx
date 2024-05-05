@@ -1,19 +1,21 @@
 import { FunctionComponent } from 'react';
 
+import Link from 'next/link';
+
 export const Header: FunctionComponent = () => {
 	return (
 		<div className='text-xl gap-12 justify-between font-semibold py-6 uppercase hidden lg:flex items-center'>
-			<div className='w-28 justify-center items-center text-center'>
+			<Link href='/' className='w-28 justify-center items-center text-center'>
 				<img src='/pics/logo.svg' alt='logo' />
-			</div>
+			</Link>
 
-			<a href='/design'>Graphic & Design</a>
+			<Link href='/design'>Graphic & Design</Link>
 
-			<div>Web development && Applications</div>
+			<Link href='/development'>Web development && Applications</Link>
 
-			<div>About</div>
+			<Link href='/about'>About</Link>
 
-			<div>Contact</div>
+			<Link href='/contact'>Contact</Link>
 		</div>
 	);
 };

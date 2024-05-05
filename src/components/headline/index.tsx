@@ -1,13 +1,19 @@
 import { FunctionComponent } from 'react';
 
-export const HeadLine: FunctionComponent = () => {
+type HeadLineProps = {
+	children?: string[];
+	additionalClassName?: string;
+};
+
+export const HeadLine: FunctionComponent<HeadLineProps> = ({
+	children,
+	additionalClassName,
+}) => {
 	return (
-		<div className='text-6xl lg:text-8xl font-bold'>
-			Make
-			<br className='inline' />
-			something
-			<br className='inline' />
-			unique
+		<div className={`font-bold ${additionalClassName}`}>
+			{children?.map((word, index) => (
+				<div key={index}>{word}</div>
+			))}
 		</div>
 	);
 };
