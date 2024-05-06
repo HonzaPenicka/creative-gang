@@ -1,12 +1,17 @@
 import { useCallback, useState } from 'react';
 
 import { Button } from '@/components/button';
-import { Collage } from '@/components/collage';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { HeadLine } from '@/components/headline';
 import { MobileMenu } from '@/components/mobile-menu';
 import { Analytics } from '@vercel/analytics/react';
+
+import { CarouselOfDEV, CarouselOfDEVMobile } from '@/components/carousel';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 export default function DevPage() {
 	const [openMobileMenu, setOpenMobileMenu] = useState(false);
@@ -63,7 +68,12 @@ export default function DevPage() {
 								</div>
 							</div>
 						</div>
-						<Collage />
+
+						{/*<Collage />*/}
+
+						<CarouselOfDEV />
+
+						<CarouselOfDEVMobile />
 					</div>
 				</div>
 

@@ -1,47 +1,183 @@
-'use client';
+import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Carousel } from 'flowbite-react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
-export function CarouselOfProject() {
+export function CarouselOfDEV() {
 	return (
-		<div className='h-80 sm:h-64 xl:h-80 2xl:h-96'>
-			<Carousel slideInterval={5000}>
-				<div className='p-12 h-full relative flex flex-col border rounded-3xl bg-white border-black gap-24'>
-					<div>
-						We are very proactive and work to make your product even better.
-					</div>
+		<div className='lg:flex text-2xl hidden'>
+			<Swiper
+				modules={[Navigation, Pagination, Scrollbar, A11y]}
+				spaceBetween={0}
+				slidesPerView={3}
+				navigation
+				pagination={{ clickable: true }}
+				scrollbar={{ draggable: true }}
+				onSwiper={(swiper) => console.log(swiper)}
+				onSlideChange={() => console.log('slide change')}
+			>
+				<SwiperSlide>
+					<a href='www.apsn.cz'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full w-full'>
+							<div>
+								Dva ambiciozní podnikatelé ve tvrdě útočí svým skromným webem ve
+								světě financí.
+							</div>
 
-					<div>Čokovoko</div>
-				</div>
-				<div className='p-12 h-full flex flex-col border rounded-3xl bg-white border-black gap-24'>
-					<div>
-						We are very proactive and work to make your product even better.
-					</div>
+							<div>APSN - finační společnost</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				<SwiperSlide>
+					<a href='www.harrachov-glass.com'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div>
+								Ukázka krásy a elegance ve formě designu a smyslnosti, který je
+								přenášený skrze obrovskou osobnost jménem Hellen.
+							</div>
 
-					<div>Čokovoko</div>
-				</div>
-				<div className='p-12 h-full flex flex-col border rounded-3xl bg-white border-black gap-24'>
-					<div>
-						We are very proactive and work to make your product even better.
-					</div>
+							<div>MAKE UP by HELLEN</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				<SwiperSlide>
+					<a href='www.harrachov-glass.com'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
-					<div>Čokovoko</div>
-				</div>
-				<div className='p-12 h-full flex flex-col border rounded-3xl bg-white border-black gap-24'>
-					<div>
-						We are very proactive and work to make your product even better.
-					</div>
+							<div>sklárny Harrachov</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				<SwiperSlide>
+					<a href='www.harrachov-glass.com'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
-					<div>Čokovoko</div>
-				</div>
-				<div className='p-12 h-full flex flex-col border rounded-3xl bg-white border-black gap-24'>
-					<div>
-						We are very proactive and work to make your product even better.
-					</div>
+							<div>sklárny Harrachov</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				<SwiperSlide>
+					<a href='www.harrachov-glass.com'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
-					<div>Čokovoko</div>
-				</div>
-			</Carousel>
+							<div>sklárny Harrachov</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				<SwiperSlide>
+					<a href='www.harrachov-glass.com'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
+
+							<div>sklárny Harrachov</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				<SwiperSlide>
+					<a href='www.harrachov-glass.com'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
+
+							<div>sklárny Harrachov</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				...
+			</Swiper>
+		</div>
+	);
+}
+
+export function CarouselOfDEVMobile() {
+	return (
+		<div className='flex text-2xl lg:hidden'>
+			<Swiper
+				modules={[Navigation, Pagination, Scrollbar, A11y]}
+				spaceBetween={0}
+				slidesPerView={1}
+				navigation
+				pagination={{ clickable: true }}
+				scrollbar={{ draggable: true }}
+				onSwiper={(swiper) => console.log(swiper)}
+				onSlideChange={() => console.log('slide change')}
+			>
+				<SwiperSlide>
+					<a href='www.apsn.cz'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full w-full'>
+							<div>
+								Dva ambiciozní podnikatelé ve tvrdě útočí svým skromným webem ve
+								světě financí.
+							</div>
+
+							<div>APSN - finační společnost</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				<SwiperSlide>
+					<a href='www.harrachov-glass.com'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div>
+								Ukázka krásy a elegance ve formě designu a smyslnosti, který je
+								přenášený skrze obrovskou osobnost jménem Hellen.
+							</div>
+
+							<div>MAKE UP by HELLEN</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				<SwiperSlide>
+					<a href='www.harrachov-glass.com'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
+
+							<div>sklárny Harrachov</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				<SwiperSlide>
+					<a href='www.harrachov-glass.com'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
+
+							<div>sklárny Harrachov</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				<SwiperSlide>
+					<a href='www.harrachov-glass.com'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
+
+							<div>sklárny Harrachov</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				<SwiperSlide>
+					<a href='www.harrachov-glass.com'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
+
+							<div>sklárny Harrachov</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				<SwiperSlide>
+					<a href='www.harrachov-glass.com'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
+
+							<div>sklárny Harrachov</div>
+						</div>
+					</a>
+				</SwiperSlide>
+				...
+			</Swiper>
 		</div>
 	);
 }
