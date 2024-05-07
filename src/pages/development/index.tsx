@@ -31,7 +31,7 @@ export default function DevPage() {
 					<div className='border border-black flex flex-col text-left'>
 						<div className='lg:grid lg:grid-cols-2 flex flex-col'>
 							<div
-								className='px-12 py-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content flex flex-col gap-36'
+								className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content flex flex-col gap-36'
 								style={{ backgroundImage: 'url(/pics/bgcreagang3.png/)' }}
 							>
 								<HeadLine additionalClassName='text-4xl lg:text-6xl'>
@@ -52,14 +52,14 @@ export default function DevPage() {
 							</div>
 
 							<div
-								className='px-12 py-12 border items-end text-right rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content flex flex-col gap-36'
+								className='p-6 lg:p-12 border rounded-3xl md:text-right bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content flex flex-col gap-36'
 								style={{ backgroundImage: 'url(/pics/bgcreagang3.png/)' }}
 							>
 								<HeadLine additionalClassName='text-4xl lg:text-6xl'>
 									{['Stay cool', ' ', 'Like a', ' ', 'Phoenix']}
 								</HeadLine>
 
-								<div className='text-4xl font-bold'>
+								<div className='text-2xl lg:text-4xl font-bold'>
 									Small
 									<br className='inline' />
 									creative team

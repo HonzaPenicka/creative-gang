@@ -33,7 +33,7 @@ export function CarouselOfDEV() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<a href='www.harrachov-glass.com'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full w-full'>
 							<div>
 								Ukázka krásy a elegance ve formě designu a smyslnosti, který je
 								přenášený skrze obrovskou osobnost jménem Hellen.
@@ -45,7 +45,7 @@ export function CarouselOfDEV() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<a href='www.harrachov-glass.com'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full w-full'>
 							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 							<div>sklárny Harrachov</div>
@@ -54,7 +54,7 @@ export function CarouselOfDEV() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<a href='www.harrachov-glass.com'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full w-full'>
 							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 							<div>sklárny Harrachov</div>
@@ -63,7 +63,7 @@ export function CarouselOfDEV() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<a href='www.harrachov-glass.com'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full w-full'>
 							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 							<div>sklárny Harrachov</div>
@@ -72,7 +72,7 @@ export function CarouselOfDEV() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<a href='www.harrachov-glass.com'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full w-full'>
 							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 							<div>sklárny Harrachov</div>
@@ -81,7 +81,7 @@ export function CarouselOfDEV() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<a href='www.harrachov-glass.com'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full w-full'>
 							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 							<div>sklárny Harrachov</div>
@@ -109,7 +109,7 @@ export function CarouselOfDEVMobile() {
 			>
 				<SwiperSlide>
 					<a href='www.apsn.cz'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full w-full'>
+						<div className='p-6 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full w-full'>
 							<div>
 								Dva ambiciozní podnikatelé ve tvrdě útočí svým skromným webem ve
 								světě financí.
@@ -121,7 +121,7 @@ export function CarouselOfDEVMobile() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<a href='www.harrachov-glass.com'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+						<div className='p-6 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
 							<div>
 								Ukázka krásy a elegance ve formě designu a smyslnosti, který je
 								přenášený skrze obrovskou osobnost jménem Hellen.
@@ -133,7 +133,7 @@ export function CarouselOfDEVMobile() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<a href='www.harrachov-glass.com'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+						<div className='p-6 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
 							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 							<div>sklárny Harrachov</div>
@@ -142,7 +142,7 @@ export function CarouselOfDEVMobile() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<a href='www.harrachov-glass.com'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+						<div className='p-6 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
 							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 							<div>sklárny Harrachov</div>
@@ -151,7 +151,7 @@ export function CarouselOfDEVMobile() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<a href='www.harrachov-glass.com'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+						<div className='p-6 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
 							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 							<div>sklárny Harrachov</div>
@@ -160,7 +160,7 @@ export function CarouselOfDEVMobile() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<a href='www.harrachov-glass.com'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+						<div className='p-6 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
 							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 							<div>sklárny Harrachov</div>
@@ -169,7 +169,7 @@ export function CarouselOfDEVMobile() {
 				</SwiperSlide>
 				<SwiperSlide>
 					<a href='www.harrachov-glass.com'>
-						<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+						<div className='p-6 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
 							<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 							<div>sklárny Harrachov</div>

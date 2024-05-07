@@ -24,7 +24,7 @@ export default function ContactPage() {
 				<div className='bg-black'>
 					<div className='border border-black flex flex-col text-left'>
 						<div
-							className='px-12 py-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content '
+							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content '
 							style={{ backgroundImage: 'url(/pics/bgcreagang3.png/)' }}
 						>
 							<HeadLine additionalClassName='text-6xl, lg:text-7xl'>
@@ -37,13 +37,13 @@ export default function ContactPage() {
 						</div>
 
 						<div className='grid lg:grid-cols-2 text-2xl'>
-							<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
 								<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 								<div>sklárny Harrachov</div>
 							</div>
 
-							<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
 								<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 								<div>sklárny Harrachov</div>
@@ -51,13 +51,18 @@ export default function ContactPage() {
 						</div>
 
 						<div className='bg-black rounded-3xl flex flex-col lg:grid lg:grid-cols-2'>
-							<form className='flex flex-col gap-3 lg:gap-6 bg-white rounded-3xl p-12'>
+							<form
+								className='flex flex-col gap-3 lg:gap-6 bg-white border rounded-3xl p-6 lg:p-12'
+								method='POST'
+								action='https://formspree.io/f/mvoelpny'
+							>
 								<div className='font-bold text-2xl'>Jméno a příjmení</div>
 
 								<div className='bg-black'>
 									<input
-										type='text'
+										type='name'
 										name='Jméno a příjmení'
+										required
 										placeholder='Jméno a příjmení'
 										id='name'
 										className='border h-12 text-sm lg:text-xl p-3 border-black rounded-3xl w-full'
@@ -70,6 +75,7 @@ export default function ContactPage() {
 									<input
 										type='tel'
 										name='Telefonní číslo'
+										required
 										placeholder='Telefonní číslo'
 										id='phone'
 										className='border h-12 text-sm lg:text-xl p-3 border-black rounded-3xl w-full'
@@ -82,6 +88,7 @@ export default function ContactPage() {
 									<input
 										type='email'
 										name='E-mail'
+										required
 										placeholder='E-mailová adresa'
 										id='email'
 										className='border h-12 text-sm lg:text-xl p-3 border-black rounded-3xl w-full'
@@ -92,26 +99,27 @@ export default function ContactPage() {
 
 								<div className='bg-black'>
 									<textarea
-										name='Zpráva'
+										name='message'
 										placeholder='Popište váš požadavek'
+										required
 										id='message'
 										className='border h-full text-sm lg:text-xl p-3 border-black rounded-3xl w-full'
 									/>
 								</div>
 
 								<div className='pt-24'>
-									<Button />
+									<Button type='submit' />
 								</div>
 							</form>
 
 							<div className='flex flex-col text-2xl'>
-								<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+								<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
 									<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 									<div>sklárny Harrachov</div>
 								</div>
 
-								<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+								<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
 									<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 									<div>sklárny Harrachov</div>
@@ -120,10 +128,10 @@ export default function ContactPage() {
 						</div>
 
 						<div className='grid lg:grid-cols-2 text-2xl'>
-							<div className='p-12 flex flex-col border rounded-3xl bg-white border-black gap-24'>
+							<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-12 lg:gap-24'>
 								<div className='font-bold text-4xl'>CREAGANG</div>
 
-								<div className='grid lg:grid-cols-2 gap-12'>
+								<div className='grid md:grid-cols-2 gap-12'>
 									<div className='flex flex-col gap-12 justify-between'>
 										<div>
 											<div className='font-bold'>E-mail</div>

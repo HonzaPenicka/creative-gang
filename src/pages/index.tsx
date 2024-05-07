@@ -21,12 +21,10 @@ export default function Home() {
 				<div className='bg-black'>
 					<div className='border border-black flex flex-col text-left'>
 						<div
-							className='px-12 py-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content '
+							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content '
 							style={{ backgroundImage: 'url(/pics/bgcreagang3.png/)' }}
 						>
-							<HeadLine additionalClassName='text-6xl, lg:text-7xl'>
-								{['Make', ' ', 'something', ' ', 'unique']}
-							</HeadLine>
+							<HeadLine>{['Make', ' ', 'something', ' ', 'unique']}</HeadLine>
 
 							<div className='pt-72'>
 								<Button additionalClassName='' />
