@@ -47,7 +47,9 @@ export default function DevPage() {
 								</div>
 
 								<div>
-									<Button />
+									<Button additionalClassName='from-[#6717f2] to-white bg-gradient-to-l'>
+										contact us
+									</Button>
 								</div>
 							</div>
 

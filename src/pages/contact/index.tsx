@@ -32,7 +32,9 @@ export default function ContactPage() {
 							</HeadLine>
 
 							<div className='pt-72'>
-								<Button />
+								<Button additionalClassName='from-[#fdfc47] to-[#24fe41] bg-gradient-to-l'>
+									contact us
+								</Button>
 							</div>
 						</div>
 

@@ -22,23 +22,26 @@ export default function DesignPage() {
 
 				<Header />
 
-				<div className='bg-black'>
-					<div className='border border-black flex flex-col text-left'>
-						<div
-							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-contain bg-no-repeat bg-bottom bg-origin-content '
-							style={{ backgroundImage: 'url(/pics/bobrkuba.jpeg/)' }}
-						>
-							<HeadLine additionalClassName='text-6xl, lg:text-7xl'>
-								{['Kuba', ' ', 'špinavá', ' ', 'prdel']}
-							</HeadLine>
+				<div className='flex flex-col text-left'>
+					<div
+						className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-contain bg-no-repeat bg-bottom bg-origin-content'
+						style={{ backgroundImage: 'url(/pics/bobrkuba.jpeg/)' }}
+					>
+						<HeadLine additionalClassName='text-6xl, lg:text-7xl'>
+							{['Kuba', ' ', 'špinavá', ' ', 'prdel']}
+						</HeadLine>
 
-							<div className='pt-72'>
-								<Button type='button' />
-							</div>
+						<div className='pt-72'>
+							<Button
+								type='button'
+								additionalClassName='from-[#f3f520] to-[#ff0099] bg-gradient-to-l'
+							>
+								Napiš mi
+							</Button>
 						</div>
-
-						<Collage />
 					</div>
+
+					<Collage />
 				</div>
 
 				<Footer />

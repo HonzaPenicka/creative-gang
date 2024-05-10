@@ -55,7 +55,9 @@ export default function AboutPage() {
 							</div>
 
 							<div className=''>
-								<Button />
+								<Button additionalClassName='from-[#20bdff] to-[#a5fecb] bg-gradient-to-l'>
+									contact us
+								</Button>
 							</div>
 						</div>
 

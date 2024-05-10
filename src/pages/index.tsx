@@ -27,7 +27,9 @@ export default function Home() {
 							<HeadLine>{['Make', ' ', 'something', ' ', 'unique']}</HeadLine>
 
 							<div className='pt-72'>
-								<Button additionalClassName='' />
+								<Button additionalClassName='from-[#bf0fff] to-[#cbff49] bg-gradient-to-l'>
+									hello
+								</Button>
 							</div>
 						</div>
 
