@@ -25,8 +25,8 @@ export default function DesignPage() {
 				<div className='bg-black'>
 					<div className='border border-black flex flex-col text-left'>
 						<div
-							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content '
-							style={{ backgroundImage: 'url(/pics/bgcreagang3.png/)' }}
+							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-contain bg-no-repeat bg-bottom bg-origin-content '
+							style={{ backgroundImage: 'url(/pics/bobrkuba.jpeg/)' }}
 						>
 							<HeadLine additionalClassName='text-6xl, lg:text-7xl'>
 								{['Kuba', ' ', 'špinavá', ' ', 'prdel']}
