@@ -1,35 +1,23 @@
 import { FunctionComponent } from 'react';
 
-export const Collage: FunctionComponent = () => {
+type CollageProps = {
+	href?: string;
+	text?: string;
+	title?: string;
+};
+
+export const Collage: FunctionComponent<CollageProps> = ({
+	href,
+	text,
+	title,
+}) => {
 	return (
-		<div className='grid lg:grid-cols-3 text-2xl'>
-			<a href='http://www.apsn.cz'>
-				<div className='p-6 lg:p-12 flex flex-col border border-t-0 rounded-3xl bg-white border-black gap-48 justify-between h-full'>
-					<div>
-						Dva ambiciozní podnikatelé ve tvrdě útočí svým skromným webem ve
-						světě financí.
-					</div>
+		<div className='text-4xl lg:text-4xl'>
+			<a href={href}>
+				<div className='p-6 lg:p-12 flex flex-col border border-t-0 rounded-3xl bg-white border-black gap-48 justify-between h-96 w-auto'>
+					<div>{text}</div>
 
-					<div>APSN - finační společnost</div>
-				</div>
-			</a>
-
-			<a href='www.harrachov-glass.com'>
-				<div className='p-6 lg:p-12 flex flex-col border border-t-0 rounded-3xl bg-white border-black gap-48 justify-between h-full'>
-					<div>
-						Ukázka krásy a elegance ve formě designu a smyslnosti, který je
-						přenášený skrze obrovskou osobnost jménem Hellen.
-					</div>
-
-					<div>MAKE UP by HELLEN</div>
-				</div>
-			</a>
-
-			<a href='www.harrachov-glass.com'>
-				<div className='p-6 lg:p-12 flex flex-col border border-t-0 rounded-3xl bg-white border-black gap-48 justify-between h-full'>
-					<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
-
-					<div>sklárny Harrachov</div>
+					<div>{title}</div>
 				</div>
 			</a>
 		</div>

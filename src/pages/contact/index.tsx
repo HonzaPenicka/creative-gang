@@ -39,13 +39,13 @@ export default function ContactPage() {
 						</div>
 
 						<div className='grid lg:grid-cols-2 text-2xl'>
-							<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-96'>
 								<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 								<div>sklárny Harrachov</div>
 							</div>
 
-							<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+							<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-96'>
 								<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 								<div>sklárny Harrachov</div>
@@ -109,19 +109,24 @@ export default function ContactPage() {
 									/>
 								</div>
 
-								<div className='pt-24'>
-									<Button type='submit' />
+								<div className='pt-12'>
+									<Button
+										type='submit'
+										additionalClassName='from-[#fdfc47] to-[#24fe41] bg-gradient-to-l'
+									>
+										Odeslat
+									</Button>
 								</div>
 							</form>
 
 							<div className='flex flex-col text-2xl'>
-								<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+								<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-96'>
 									<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 									<div>sklárny Harrachov</div>
 								</div>
 
-								<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-full'>
+								<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-96'>
 									<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
 
 									<div>sklárny Harrachov</div>
@@ -155,8 +160,8 @@ export default function ContactPage() {
 
 										<div>
 											<div className='font-bold'>Fakturační údaje</div>
-											<div className='flex gap-6'>
-												<div>IČO</div>
+											<div className='flex gap-1'>
+												<div>IČO:</div>
 												<div>14151057</div>
 											</div>
 										</div>

@@ -24,16 +24,16 @@ export default function AboutPage() {
 				<div className='bg-black'>
 					<div className='border border-black flex flex-col text-left'>
 						<div
-							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-border flex flex-col gap-36'
+							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-border flex flex-col gap-12'
 							style={{ backgroundImage: 'url(/pics/skulls.png/)' }}
 						>
 							<HeadLine additionalClassName='text-6xl, lg:text-7xl'>
 								{['We', ' ', 'Are here', ' ', 'For you & friends']}
 							</HeadLine>
 
-							<div className='lg:w-1/2 text-xl'>
+							<div className='lg:w-3/4 text-xl font-medium'>
 								Vítejte ve světě CREAGANG, kde se setkává technologie s
-								kreativitou a vznikají digitální divy!
+								kreativitou!
 								<br className='inline' />
 								<br className='inline' />
 								Jsme tým nadšenců, kteří milují vývoj a design webových stránek,
@@ -46,12 +46,14 @@ export default function AboutPage() {
 								Ať už jste podnikatel hledající revoluční webové řešení, nebo
 								jednoduše milovník designu toužící po originálním grafickém
 								obsahu, máme pro vás to nejlepší. Společně proměníme vaše
-								myšlenky a sny v digitální realitu, která oslní a bude bavit.
+								myšlenky a sny v digitální realitu.
 								<br className='inline' />
 								<br className='inline' />
 								Připojte se k CREAGANG a zažijte svět plný možností, kde se váš
-								digitální příběh stává skutečností. Jsme tu pro vás, abychom vám
-								pomohli objevovat nové digitální horizonty s lehkostí a stylem!
+								digitální příběh stává skutečností.
+								<br className='inline' />
+								<br className='inline' />
+								Jsme tu pro vás!
 							</div>
 
 							<div className=''>

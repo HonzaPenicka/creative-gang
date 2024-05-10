@@ -33,7 +33,13 @@ export default function Home() {
 							</div>
 						</div>
 
-						<Collage />
+						<div className='grid lg:grid-cols-3'>
+							<Collage title='design & branding' />
+
+							<Collage title='web & app development' />
+
+							<Collage title="let's work together" />
+						</div>
 					</div>
 				</div>
 

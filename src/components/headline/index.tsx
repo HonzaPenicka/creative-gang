@@ -10,7 +10,7 @@ export const HeadLine: FunctionComponent<HeadLineProps> = ({
 	additionalClassName,
 }) => {
 	return (
-		<div className={`font-bold text-4xl lg:text-7xl ${additionalClassName}`}>
+		<div className={`font-bold text-6xl lg:text-7xl ${additionalClassName}`}>
 			{children?.map((word, index) => (
 				<div key={index}>{word}</div>
 			))}
