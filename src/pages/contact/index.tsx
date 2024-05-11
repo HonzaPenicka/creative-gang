@@ -1,7 +1,9 @@
 import { useCallback, useState } from 'react';
 
+import { Box } from '@/components/box';
 import { Button } from '@/components/button';
 import { Footer } from '@/components/footer';
+import { Form } from '@/components/form';
 import { Header } from '@/components/header';
 import { HeadLine } from '@/components/headline';
 import { MobileMenu } from '@/components/mobile-menu';
@@ -39,98 +41,36 @@ export default function ContactPage() {
 						</div>
 
 						<div className='grid lg:grid-cols-2 text-2xl'>
-							<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-96'>
-								<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
+							<Box
+								background='/pics/collage/ambi.png'
+								text='hovno leze z prdelní dírou'
+								title='prdel'
+								additionalClassName='bg-center bg-no-repeat bg-cover'
+							/>
 
-								<div>sklárny Harrachov</div>
-							</div>
-
-							<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-96'>
-								<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
-
-								<div>sklárny Harrachov</div>
-							</div>
+							<Box
+								background='/pics/collage/planetesx4.png'
+								text='hovno leze z prdelní dírou'
+								title='prdel'
+								additionalClassName='bg-center bg-no-repeat bg-cover'
+							/>
 						</div>
 
 						<div className='bg-black rounded-3xl flex flex-col lg:grid lg:grid-cols-2'>
-							<form
-								className='flex flex-col gap-3 lg:gap-6 bg-white border rounded-3xl p-6 lg:p-12'
-								method='POST'
-								action='https://formspree.io/f/mvoelpny'
-							>
-								<div className='font-bold text-2xl'>Jméno a příjmení</div>
-
-								<div className='bg-black'>
-									<input
-										type='name'
-										name='Jméno a příjmení'
-										required
-										placeholder='Jméno a příjmení'
-										id='name'
-										className='border h-12 text-sm lg:text-xl p-3 border-black rounded-3xl w-full'
-									/>
-								</div>
-
-								<div className='font-bold text-2xl'>Telefonní číslo</div>
-
-								<div className='bg-black'>
-									<input
-										type='tel'
-										name='Telefonní číslo'
-										required
-										placeholder='Telefonní číslo'
-										id='phone'
-										className='border h-12 text-sm lg:text-xl p-3 border-black rounded-3xl w-full'
-									/>
-								</div>
-
-								<div className='font-bold text-2xl'>E-mail</div>
-
-								<div className='bg-black'>
-									<input
-										type='email'
-										name='E-mail'
-										required
-										placeholder='E-mailová adresa'
-										id='email'
-										className='border h-12 text-sm lg:text-xl p-3 border-black rounded-3xl w-full'
-									/>
-								</div>
-
-								<div className='font-bold text-2xl'>Zpráva</div>
-
-								<div className='bg-black'>
-									<textarea
-										name='message'
-										placeholder='Popište váš požadavek'
-										required
-										id='message'
-										className='border h-full text-sm lg:text-xl p-3 border-black rounded-3xl w-full'
-									/>
-								</div>
-
-								<div className='pt-12'>
-									<Button
-										type='submit'
-										additionalClassName='from-[#fdfc47] to-[#24fe41] bg-gradient-to-l'
-									>
-										Odeslat
-									</Button>
-								</div>
-							</form>
+							<Form />
 
 							<div className='flex flex-col text-2xl'>
-								<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-96'>
-									<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
+								<Box
+									background='/pics/collage/planetesx4.png'
+									text='hovno leze z prdelní dírou'
+									title='prdel'
+								/>
 
-									<div>sklárny Harrachov</div>
-								</div>
-
-								<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-48 justify-between h-96'>
-									<div>Laciné cetky, mrdky, mercedesy a čardáš.</div>
-
-									<div>sklárny Harrachov</div>
-								</div>
+								<Box
+									background='/pics/collage/ambi.png'
+									text='hovno leze z prdelní dírou'
+									title='prdel'
+								/>
 							</div>
 						</div>
 
