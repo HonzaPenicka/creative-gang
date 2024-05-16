@@ -26,16 +26,38 @@ export default function ContactPage() {
 				<div className='bg-black'>
 					<div className='border border-black flex flex-col text-left'>
 						<div
-							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content '
-							style={{ backgroundImage: 'url(/pics/bgcreagang3.png/)' }}
+							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center hidden lg:grid'
+							style={{
+								backgroundImage: 'url(/pics/brain.png)',
+							}}
 						>
-							<HeadLine additionalClassName='text-6xl, lg:text-7xl'>
+							<HeadLine additionalClassName='text-6xl, lg:text-7xl text-black hover:text-white'>
 								{['Make', ' ', 'something', ' ', 'unique']}
 							</HeadLine>
 
-							<div className='pt-72'>
+							<div className='pt-96'>
 								<Button
-									additionalClassName='from-[#fdfc47] to-[#24fe41] bg-gradient-to-l'
+									additionalClassName='from-[#fdfc47] to-[#24fe41] bg-gradient-to-l hover:text-white hover:bg-white'
+									type='button'
+								>
+									contact us
+								</Button>
+							</div>
+						</div>
+
+						<div
+							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center lg:hidden'
+							style={{
+								backgroundImage: 'url(/pics/brain2.png)',
+							}}
+						>
+							<HeadLine additionalClassName='text-6xl, lg:text-7xl text-black hover:text-white'>
+								{['Make', ' ', 'something', ' ', 'unique']}
+							</HeadLine>
+
+							<div className='pt-96'>
+								<Button
+									additionalClassName='from-[#fdfc47] to-[#24fe41] bg-gradient-to-l hover:text-white hover:bg-white'
 									type='button'
 								>
 									contact us
@@ -45,14 +67,14 @@ export default function ContactPage() {
 
 						<div className='grid lg:grid-cols-2 text-2xl'>
 							<Box
-								background='/pics/collage/ambi.png'
+								background='/pics/brain4.png'
 								text='hovno leze z prdelní dírou'
 								title='prdel'
 								additionalClassName='bg-center bg-no-repeat bg-cover'
 							/>
 
 							<Box
-								background='/pics/collage/planetesx4.png'
+								background='/pics/brain3pc.png'
 								text='hovno leze z prdelní dírou'
 								title='prdel'
 								additionalClassName='bg-center bg-no-repeat bg-cover'
@@ -64,7 +86,7 @@ export default function ContactPage() {
 
 							<div className='flex flex-col text-2xl'>
 								<Box
-									background='/pics/collage/planetesx4.png'
+									background='/pics/brain2.png'
 									text='hovno leze z prdelní dírou'
 									title='prdel'
 								/>

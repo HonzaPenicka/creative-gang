@@ -1,3 +1,5 @@
+'use client';
+
 import { FunctionComponent } from 'react';
 
 type ButtonProps = {
@@ -13,7 +15,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
 }) => {
 	return (
 		<button
-			className={`py-3 lg:px-24 px-12 text-2xl lg:text-4xl rounded-3xl uppercase bg-center bg-no-repeat bg-cover ${additionalClassName}`}
+			className={`py-3 lg:px-24 px-12 text-2xl lg:text-4xl rounded-3xl uppercase ${additionalClassName}`}
 			type={type}
 		>
 			{children}
