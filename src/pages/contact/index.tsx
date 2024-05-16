@@ -26,9 +26,9 @@ export default function ContactPage() {
 				<div className='bg-black'>
 					<div className='border border-black flex flex-col text-left'>
 						<div
-							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center hidden lg:grid'
+							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center'
 							style={{
-								backgroundImage: 'url(/pics/brain.png)',
+								backgroundImage: 'url(/pics/brain7.png)',
 							}}
 						>
 							<HeadLine additionalClassName='text-6xl, lg:text-7xl text-black hover:text-white'>
@@ -46,7 +46,7 @@ export default function ContactPage() {
 						</div>
 
 						<div
-							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center lg:hidden'
+							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center hidden'
 							style={{
 								backgroundImage: 'url(/pics/brain2.png)',
 							}}
