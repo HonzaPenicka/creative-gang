@@ -25,28 +25,28 @@ export const MobileMenu: FunctionComponent = () => {
 					<div className='text-2xl gap-12 font-bold py-8 uppercase flex mt-24 text-right px-6 absolute top-0 flex-col z-20 bg-white'>
 						<Link
 							href='/design'
-							className='hover:-translate-x-10 transition duration-300 delay-200 hover:delay-200 active:underline hover:underline-offset-4 hover:underline'
+							className='active:-translate-x-10 transition duration-300 delay-200 active:delay-200 active:underline active:underline-offset-4'
 						>
 							Graphic & Design
 						</Link>
 
 						<Link
 							href='/development'
-							className='hover:-translate-x-10 transition duration-300 delay-200 hover:delay-200 active:underline hover:underline-offset-4 hover:underline'
+							className='active:-translate-x-10 transition duration-300 delay-200 active:delay-200 active:underline active:underline-offset-4'
 						>
 							Web development && Applications
 						</Link>
 
 						<Link
 							href='/about'
-							className='hover:-translate-x-10 transition duration-300 delay-200 hover:delay-200 active:underline hover:underline-offset-4 hover:underline'
+							className='active:-translate-x-10 transition duration-300 delay-200 active:delay-200 active:underline active:underline-offset-4'
 						>
 							About
 						</Link>
 
 						<Link
 							href='/contact'
-							className='hover:-translate-x-10 transition duration-300 delay-200 hover:delay-200 active:underline hover:underline-offset-4 hover:underline'
+							className='active:-translate-x-10 transition duration-300 delay-200 active:delay-200 active:underline active:underline-offset-4'
 						>
 							Contact
 						</Link>

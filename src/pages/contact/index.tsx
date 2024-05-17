@@ -51,13 +51,13 @@ export default function ContactPage() {
 								backgroundImage: 'url(/pics/brain2.png)',
 							}}
 						>
-							<HeadLine additionalClassName='text-6xl, lg:text-7xl text-black hover:text-white'>
+							<HeadLine additionalClassName='text-6xl, lg:text-7xl text-black'>
 								{['Make', ' ', 'something', ' ', 'unique']}
 							</HeadLine>
 
 							<div className='pt-96'>
 								<Button
-									additionalClassName='from-[#fdfc47] to-[#24fe41] bg-gradient-to-l hover:text-white hover:bg-white'
+									additionalClassName='from-[#fdfc47] to-[#24fe41] bg-gradient-to-l hover:text-white'
 									type='button'
 								>
 									contact us
