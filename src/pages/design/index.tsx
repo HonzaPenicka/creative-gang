@@ -1,10 +1,7 @@
 import { useCallback, useState } from 'react';
 
-import { Button } from '@/components/button';
-import { Collage } from '@/components/collage';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
-import { HeadLine } from '@/components/headline';
 import { MobileMenu } from '@/components/mobile-menu';
 import { Analytics } from '@vercel/analytics/react';
 
@@ -22,31 +19,66 @@ export default function DesignPage() {
 
 				<Header />
 
-				<div className='flex flex-col text-left'>
-					<div
-						className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-contain bg-no-repeat bg-bottom bg-origin-content'
-						style={{ backgroundImage: 'url(/pics/bobrkuba.jpeg/)' }}
-					>
-						<HeadLine additionalClassName='text-6xl, lg:text-7xl'>
-							{['Kuba', ' ', 'špinavá', ' ', 'prdel']}
-						</HeadLine>
-
-						<div className='pt-72'>
-							<Button
-								type='button'
-								additionalClassName='from-[#f3f520] to-[#ff0099] bg-gradient-to-l'
+				<div className='bg-white'>
+					<div className='grid'>
+						<div className='flex flex-col gap-0.5'>
+							<div
+								className='aspect-square lg:aspect-video rounded-xl items-center justify-center flex bg-cover bg-center'
+								style={{
+									backgroundImage: 'url(/pics/home/face.png)',
+								}}
 							>
-								Napiš mi
-							</Button>
+								<div className='text-6xl lg:text-9xl font-bold text-white'>
+									crea gang
+								</div>
+							</div>
+
+							<div className='grid lg:grid-cols-2 gap-0.5'>
+								<div className='aspect-square rounded-xl justify-between flex flex-col p-3 lg:p-6 bg-gray-300 text-white bg-cover bg-center'>
+									<a href='http://www.pizzaspeed.cz' className=''>
+										www.pizzaspeed.cz
+									</a>
+									<div className='text-3xl lg:text-6xl font-bold'>
+										GRAFIKA & DESIGN
+									</div>
+									<div className='text-balance lg:pr-24 text-sm'>
+										Specializujeme se na vytváření jedinečných webových stránek,
+										grafického designu a brandingu.
+									</div>
+								</div>
+								<div
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
+									style={{
+										backgroundImage: 'url(/pics/home/face.png)',
+									}}
+								>
+									<div>WEB & APP DEVELOPMENT</div>
+								</div>
+							</div>
+
+							<div className='lg:grid lg:grid-cols-2 gap-0.5 flex flex-col-reverse'>
+								<div
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
+									style={{
+										backgroundImage: 'url(/pics/home/face.png)',
+									}}
+								>
+									<div>GRAFIKA & DESIGN</div>
+								</div>
+								<div className='aspect-square rounded-xl justify-between text-right flex flex-col p-3 lg:p-6 bg-gray-300 text-white bg-cover bg-center'>
+									<a href='http://www.pizzaspeed.cz' className=''>
+										www.pizzaspeed.cz
+									</a>
+									<div className='text-3xl lg:text-6xl font-bold'>
+										GRAFIKA & DESIGN
+									</div>
+									<div className='text-balance lg:pl-24 text-sm'>
+										Specializujeme se na vytváření jedinečných webových stránek,
+										grafického designu a brandingu.
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-
-					<div className='grid lg:grid-cols-3'>
-						<Collage title='design & branding' />
-
-						<Collage title='web & app development' />
-
-						<Collage title="let's work together" />
 					</div>
 				</div>
 

@@ -1,9 +1,7 @@
 import { useCallback, useState } from 'react';
 
-import { Button } from '@/components/button';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
-import { HeadLine } from '@/components/headline';
 import { MobileMenu } from '@/components/mobile-menu';
 import { Analytics } from '@vercel/analytics/react';
 
@@ -21,81 +19,43 @@ export default function AboutPage() {
 
 				<Header />
 
-				<div className='bg-black'>
-					<div className='border border-black flex flex-col text-left'>
-						<div
-							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-border flex flex-col gap-12'
-							style={{ backgroundImage: 'url(/pics/skulls.png/)' }}
-						>
-							<HeadLine additionalClassName='text-6xl, lg:text-7xl'>
-								{['We', ' ', 'Are here', ' ', 'For you & friends']}
-							</HeadLine>
-
-							<div className='lg:w-3/4 text-xl font-medium'>
-								Vítejte ve světě CREAGANG, kde se setkává technologie s
-								kreativitou!
-								<br className='inline' />
-								<br className='inline' />
-								Jsme tým nadšenců, kteří milují vývoj a design webových stránek,
-								aplikací, grafiky a všeho, co je spojené s digitálním světem. U
-								nás není prostor pro nudu a stereotypy. Naopak, jsme tu pro
-								všechny, kdo chtějí světu ukázat svou jedinečnou vizí
-								prostřednictvím moderních technologií a kreativních konceptů.
-								<br className='inline' />
-								<br className='inline' />
-								Ať už jste podnikatel hledající revoluční webové řešení, nebo
-								jednoduše milovník designu toužící po originálním grafickém
-								obsahu, máme pro vás to nejlepší. Společně proměníme vaše
-								myšlenky a sny v digitální realitu.
-								<br className='inline' />
-								<br className='inline' />
-								Připojte se k CREAGANG a zažijte svět plný možností, kde se váš
-								digitální příběh stává skutečností.
-								<br className='inline' />
-								<br className='inline' />
-								Jsme tu pro vás!
-							</div>
-
-							<div className=''>
-								<Button additionalClassName='from-[#20bdff] to-[#a5fecb] bg-gradient-to-l'>
-									contact us
-								</Button>
-							</div>
-						</div>
-
-						<div className='lg:grid lg:grid-cols-2 flex flex-col'>
+				<div className='bg-white'>
+					<div className='grid'>
+						<div className='flex flex-col gap-0.5'>
 							<div
-								className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content flex flex-col gap-36'
-								style={{ backgroundImage: 'url(/pics/bgcreagang3.png/)' }}
+								className='aspect-square lg:aspect-video rounded-xl items-center justify-center flex bg-cover bg-center'
+								style={{
+									backgroundImage: 'url(/pics/home/face.png)',
+								}}
 							>
-								<HeadLine additionalClassName='text-4xl lg:text-6xl'>
-									{['Nice', ' ', 'High speed', ' ', 'Website']}
-								</HeadLine>
-
-								<div className='text-4xl font-bold'>
-									Small
-									<br className='inline' />
-									creative team
-									<br className='inline' />
-									with brilliant ideas
+								<div className='text-6xl lg:text-9xl font-bold text-white'>
+									crea gang
+								</div>
+							</div>
+							<div className='aspect-square lg:aspect-video rounded-xl justify-center text-center p-6 lg:p-12 flex flex-col bg-gray-200 gap-12 lg:gap-24'>
+								<div className='text-sm lg:text-xl lg:px-48'>
+									Specializujeme se na vytváření jedinečných webových stránek,
+									grafického designu a brandingu. Naše práce je zaměřena na
+									inovativní a moderní řešení, která přesně odpovídají potřebám
+									našich klientů. Prohlédněte si naše portfolio a přesvědčte se
+									sami. Specializujeme se na vytváření jedinečných webových
+									stránek, grafického designu a brandingu. Naše práce je
+									zaměřena na inovativní a moderní řešení, která přesně
+									odpovídají potřebám našich klientů. Prohlédněte si naše
+									portfolio a přesvědčte se sami.
+									<br />
+									<br />
+									Honza a Kuba
 								</div>
 							</div>
 
 							<div
-								className='p-6 lg:p-12 border md:text-right rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content flex flex-col gap-36'
-								style={{ backgroundImage: 'url(/pics/bgcreagang3.png/)' }}
+								className='aspect-square lg:aspect-video rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
+								style={{
+									backgroundImage: 'url(/pics/home/face.png)',
+								}}
 							>
-								<HeadLine additionalClassName='text-4xl lg:text-6xl'>
-									{['Stay cool', ' ', 'Like a', ' ', 'Phoenix']}
-								</HeadLine>
-
-								<div className='text-4xl font-bold'>
-									Small
-									<br className='inline' />
-									creative team
-									<br className='inline' />
-									with brilliant ideas
-								</div>
+								<div>WEB & APP DEVELOPMENT</div>
 							</div>
 						</div>
 					</div>

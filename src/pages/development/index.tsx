@@ -1,13 +1,10 @@
 import { useCallback, useState } from 'react';
 
-import { Button } from '@/components/button';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
-import { HeadLine } from '@/components/headline';
 import { MobileMenu } from '@/components/mobile-menu';
 import { Analytics } from '@vercel/analytics/react';
 
-import { CarouselOfDEV, CarouselOfDEVMobile } from '@/components/carousel';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -27,55 +24,66 @@ export default function DevPage() {
 
 				<Header />
 
-				<div className='bg-black'>
-					<div className='border border-black flex flex-col text-left'>
-						<div className='lg:grid lg:grid-cols-2 flex flex-col'>
+				<div className='bg-white'>
+					<div className='grid'>
+						<div className='flex flex-col gap-0.5'>
 							<div
-								className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content flex flex-col gap-36'
-								style={{ backgroundImage: 'url(/pics/bgcreagang3.png/)' }}
+								className='aspect-square lg:aspect-video rounded-xl items-center justify-center flex bg-cover bg-center'
+								style={{
+									backgroundImage: 'url(/pics/home/face.png)',
+								}}
 							>
-								<HeadLine additionalClassName='text-4xl lg:text-6xl'>
-									{['Nice', ' ', 'High speed', ' ', 'Website']}
-								</HeadLine>
-
-								<div className='text-2xl lg:text-4xl font-bold'>
-									Small
-									<br className='inline' />
-									creative team
-									<br className='inline' />
-									with brilliant ideas
-								</div>
-
-								<div>
-									<Button additionalClassName='from-[#6717f2] to-white bg-gradient-to-l'>
-										contact us
-									</Button>
+								<div className='text-6xl lg:text-9xl font-bold text-white'>
+									crea gang
 								</div>
 							</div>
 
-							<div
-								className='p-6 lg:p-12 border rounded-3xl md:text-right bg-white border-black bg-cover bg-no-repeat bg-center bg-origin-content flex flex-col gap-36'
-								style={{ backgroundImage: 'url(/pics/bgcreagang3.png/)' }}
-							>
-								<HeadLine additionalClassName='text-4xl lg:text-6xl'>
-									{['Stay cool', ' ', 'Like a', ' ', 'Phoenix']}
-								</HeadLine>
+							<div className='grid lg:grid-cols-2 gap-0.5'>
+								<div className='aspect-square rounded-xl justify-between flex flex-col p-3 lg:p-6 bg-gray-300 text-white bg-cover bg-center'>
+									<a href='http://www.pizzaspeed.cz' className=''>
+										www.pizzaspeed.cz
+									</a>
+									<div className='text-3xl lg:text-6xl font-bold'>
+										GRAFIKA & DESIGN
+									</div>
+									<div className='text-balance lg:pr-24 text-sm'>
+										Specializujeme se na vytváření jedinečných webových stránek,
+										grafického designu a brandingu.
+									</div>
+								</div>
+								<div
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
+									style={{
+										backgroundImage: 'url(/pics/home/face.png)',
+									}}
+								>
+									<div>WEB & APP DEVELOPMENT</div>
+								</div>
+							</div>
 
-								<div className='text-2xl lg:text-4xl font-bold'>
-									Small
-									<br className='inline' />
-									creative team
-									<br className='inline' />
-									with brilliant ideas
+							<div className='lg:grid lg:grid-cols-2 gap-0.5 flex flex-col-reverse'>
+								<div
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
+									style={{
+										backgroundImage: 'url(/pics/home/face.png)',
+									}}
+								>
+									<div>GRAFIKA & DESIGN</div>
+								</div>
+								<div className='aspect-square rounded-xl justify-between text-right flex flex-col p-3 lg:p-6 bg-gray-300 text-white bg-cover bg-center'>
+									<a href='http://www.pizzaspeed.cz' className=''>
+										www.pizzaspeed.cz
+									</a>
+									<div className='text-3xl lg:text-6xl font-bold'>
+										GRAFIKA & DESIGN
+									</div>
+									<div className='text-balance lg:pl-24 text-sm'>
+										Specializujeme se na vytváření jedinečných webových stránek,
+										grafického designu a brandingu.
+									</div>
 								</div>
 							</div>
 						</div>
-
-						{/*<Collage />*/}
-
-						<CarouselOfDEV />
-
-						<CarouselOfDEVMobile />
 					</div>
 				</div>
 
