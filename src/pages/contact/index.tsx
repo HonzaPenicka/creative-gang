@@ -68,15 +68,15 @@ export default function ContactPage() {
 						<div className='grid lg:grid-cols-2 text-2xl'>
 							<Box
 								background='/pics/brain4.png'
-								text='hovno leze z prdelní dírou'
-								title='prdel'
+								text='lejzr'
+								title='lupaa'
 								additionalClassName='bg-center bg-no-repeat bg-cover'
 							/>
 
 							<Box
 								background='/pics/brain3pc.png'
-								text='hovno leze z prdelní dírou'
-								title='prdel'
+								text='lejzr'
+								title='lupa'
 								additionalClassName='bg-center bg-no-repeat bg-cover'
 							/>
 						</div>
@@ -85,16 +85,12 @@ export default function ContactPage() {
 							<Form />
 
 							<div className='flex flex-col text-2xl'>
-								<Box
-									background='/pics/brain2.png'
-									text='hovno leze z prdelní dírou'
-									title='prdel'
-								/>
+								<Box background='/pics/brain2.png' text='lejzr' title='lupa' />
 
 								<Box
 									background='/pics/collage/ambi.png'
-									text='hovno leze z prdelní dírou'
-									title='prdel'
+									text='lejzr'
+									title='lupa'
 								/>
 							</div>
 						</div>
