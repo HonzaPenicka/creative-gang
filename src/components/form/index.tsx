@@ -7,9 +7,6 @@ export const Form: FunctionComponent = () => {
 			className='flex flex-col gap-3 lg:gap-12 bg-white border rounded-3xl p-6 lg:p-12 bg-center bg-cover'
 			method='POST'
 			action='https://formspree.io/f/mvoelpny'
-			style={{
-				backgroundImage: 'url(/pics/brain5.png)',
-			}}
 		>
 			<div className='font-bold text-2xl'>Jméno a příjmení</div>
 

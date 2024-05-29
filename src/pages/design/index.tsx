@@ -28,20 +28,21 @@ export default function DesignPage() {
 									backgroundImage: 'url(/pics/home/face.png)',
 								}}
 							>
-								<div className='text-6xl lg:text-9xl font-bold text-white'>
-									crea gang
+								<div className='text-6xl lg:text-9xl font-bold text-white uppercase'>
+									grafika
+									<br /> & design
 								</div>
 							</div>
 
 							<div className='grid lg:grid-cols-2 gap-0.5'>
 								<div className='aspect-square rounded-xl justify-between flex flex-col p-3 lg:p-6 bg-gray-300 text-white bg-cover bg-center'>
-									<a href='http://www.pizzaspeed.cz' className=''>
+									<a href='http://www.pizzaspeed.cz' className='text-xl'>
 										www.pizzaspeed.cz
 									</a>
 									<div className='text-3xl lg:text-6xl font-bold'>
 										GRAFIKA & DESIGN
 									</div>
-									<div className='text-balance lg:pr-24 text-sm'>
+									<div className='text-balance lg:pr-24 text-xl'>
 										Specializujeme se na vytváření jedinečných webových stránek,
 										grafického designu a brandingu.
 									</div>
@@ -66,13 +67,13 @@ export default function DesignPage() {
 									<div>GRAFIKA & DESIGN</div>
 								</div>
 								<div className='aspect-square rounded-xl justify-between text-right flex flex-col p-3 lg:p-6 bg-gray-300 text-white bg-cover bg-center'>
-									<a href='http://www.pizzaspeed.cz' className=''>
+									<a href='http://www.pizzaspeed.cz' className='text-xl'>
 										www.pizzaspeed.cz
 									</a>
 									<div className='text-3xl lg:text-6xl font-bold'>
 										GRAFIKA & DESIGN
 									</div>
-									<div className='text-balance lg:pl-24 text-sm'>
+									<div className='text-balance lg:pl-24 text-xl'>
 										Specializujeme se na vytváření jedinečných webových stránek,
 										grafického designu a brandingu.
 									</div>

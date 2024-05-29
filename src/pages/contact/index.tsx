@@ -1,11 +1,7 @@
 import { useCallback, useState } from 'react';
 
-import { Box } from '@/components/box';
-import { Button } from '@/components/button';
 import { Footer } from '@/components/footer';
-import { Form } from '@/components/form';
 import { Header } from '@/components/header';
-import { HeadLine } from '@/components/headline';
 import { MobileMenu } from '@/components/mobile-menu';
 import { Analytics } from '@vercel/analytics/react';
 
@@ -23,121 +19,148 @@ export default function ContactPage() {
 
 				<Header />
 
-				<div className='bg-black'>
-					<div className='border border-black flex flex-col text-left'>
-						<div
-							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center'
-							style={{
-								backgroundImage: 'url(/pics/brain7.png)',
-							}}
-						>
-							<HeadLine additionalClassName='text-6xl, lg:text-7xl text-black hover:text-white'>
-								{['Make', ' ', 'something', ' ', 'unique']}
-							</HeadLine>
-
-							<div className='pt-96'>
-								<Button
-									additionalClassName='from-[#fdfc47] to-[#24fe41] bg-gradient-to-l hover:text-white hover:bg-white'
-									type='button'
+				<div className='bg-white'>
+					<div className='grid'>
+						<div className='flex flex-col gap-0.5'>
+							<div
+								className='aspect-square lg:aspect-video rounded-xl items-center justify-center flex bg-cover bg-center'
+								style={{
+									backgroundImage: 'url(/pics/home/face.png)',
+								}}
+							>
+								<div className='text-6xl lg:text-9xl font-bold text-white uppercase'>
+									kontakt
+								</div>
+							</div>
+							<div className='grid lg:grid-cols-2 gap-0.5'>
+								<form
+									action='https://formspree.io/f/mvoelpny'
+									method='POST'
+									className=''
 								>
-									contact us
-								</Button>
-							</div>
-						</div>
-
-						<div
-							className='p-6 lg:p-12 border rounded-3xl bg-white border-black bg-cover bg-no-repeat bg-center hidden'
-							style={{
-								backgroundImage: 'url(/pics/brain2.png)',
-							}}
-						>
-							<HeadLine additionalClassName='text-6xl, lg:text-7xl text-black'>
-								{['Make', ' ', 'something', ' ', 'unique']}
-							</HeadLine>
-
-							<div className='pt-96'>
-								<Button
-									additionalClassName='from-[#fdfc47] to-[#24fe41] bg-gradient-to-l hover:text-white'
-									type='button'
-								>
-									contact us
-								</Button>
-							</div>
-						</div>
-
-						<div className='grid lg:grid-cols-2 text-2xl'>
-							<Box
-								background='/pics/brain4.png'
-								text='lejzr'
-								title='lupaa'
-								additionalClassName='bg-center bg-no-repeat bg-cover'
-							/>
-
-							<Box
-								background='/pics/brain3pc.png'
-								text='lejzr'
-								title='lupa'
-								additionalClassName='bg-center bg-no-repeat bg-cover'
-							/>
-						</div>
-
-						<div className='bg-black rounded-3xl flex flex-col lg:grid lg:grid-cols-2'>
-							<Form />
-
-							<div className='flex flex-col text-2xl'>
-								<Box background='/pics/brain2.png' text='lejzr' title='lupa' />
-
-								<Box
-									background='/pics/collage/ambi.png'
-									text='lejzr'
-									title='lupa'
-								/>
-							</div>
-						</div>
-
-						<div className='grid lg:grid-cols-2 text-2xl'>
-							<div className='p-6 lg:p-12 flex flex-col border rounded-3xl bg-white border-black gap-12 lg:gap-24'>
-								<div className='font-bold text-4xl'>CREAGANG</div>
-
-								<div className='grid md:grid-cols-2 gap-12'>
-									<div className='flex flex-col gap-12 justify-between'>
-										<div>
-											<div className='font-bold'>E-mail</div>
-											<div>info@creagang.cz</div>
+									<div className='aspect-square rounded-xl p-3 lg:p-6 bg-gray-300 text-black flex flex-col gap-3 justify-between'>
+										<div className='text-2xl lg:text-6xl font-bold'>
+											napište nám
 										</div>
 
 										<div>
-											<div className='font-bold'>Telefon</div>
-											<div>+420 605 088 050</div>
-										</div>
-									</div>
+											<div className='text-base lg:text-2xl font-bold pb-1 lg:pb-3'>
+												jméno a příjmení
+											</div>
 
-									<div className='flex flex-col gap-12 justify-between'>
-										<div>
-											<div className='font-bold'>Adresa</div>
-											<div>Křišťanova 1678/20</div>
-											<div>Praha 3 - Žižkov</div>
+											<div className='w-auto'>
+												<input
+													type='name'
+													name='Jméno a příjmení'
+													required
+													placeholder='Jméno a příjmení'
+													id='name'
+													className='h-6 p-1 lg:w-1/2 rounded-xl lg:h-12 lg:text-xl'
+												/>
+											</div>
 										</div>
 
 										<div>
-											<div className='font-bold'>Fakturační údaje</div>
-											<div className='flex gap-1'>
-												<div>IČO:</div>
-												<div>14151057</div>
+											<div className='text-base lg:text-2xl font-bold pb-1 lg:pb-3'>
+												e-mail
+											</div>
+
+											<div className='w-auto'>
+												<input
+													type='email'
+													name='E-mail'
+													required
+													placeholder='E-mailová adresa'
+													id='email'
+													className='h-6 p-1 lg:w-1/2 rounded-xl lg:h-12 lg:text-xl'
+												/>
+											</div>
+										</div>
+
+										<div>
+											<div className='text-base lg:text-2xl font-bold pb-1 lg:pb-3'>
+												telefonní číslo
+											</div>
+
+											<div className='w-auto'>
+												<input
+													type='tel'
+													name='Telefonní číslo'
+													required
+													placeholder='Telefonní číslo'
+													id='phone'
+													className='h-6 p-1 lg:w-1/2 rounded-xl lg:h-12 lg:text-xl'
+												/>
+											</div>
+										</div>
+
+										<div>
+											<div className='text-base lg:text-2xl font-bold pb-1 lg:pb-3'>
+												vaše zpráva
+											</div>
+
+											<div className='w-auto'>
+												<textarea
+													name='message'
+													placeholder='Popište váš požadavek'
+													required
+													id='message'
+													className='h-12 p-1 w-80 lg:w-full rounded-xl lg:h-36 lg:text-xl'
+												/>
 											</div>
 										</div>
 									</div>
-								</div>
+								</form>
+
+								<div
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
+									style={{
+										backgroundImage: 'url(/pics/home/face.png)',
+									}}
+								></div>
 							</div>
 
-							<div className='flex flex-col border rounded-3xl bg-white border-black w-full h-auto'>
-								<iframe
-									src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10240.211479508469!2d14.44544768214728!3d50.08529699439395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b936952a69573%3A0x8c0309f38e0d2c7d!2zxb1pxb5rb3YsIDEzMCAwMCBQcmFoYSAz!5e0!3m2!1scs!2scz!4v1714943485680!5m2!1scs!2scz'
-									width=''
-									height='450'
-									style={{ border: 0, borderRadius: '24px' }}
-									loading='lazy'
-								></iframe>
+							<div className='lg:grid lg:grid-cols-2 gap-0.5 flex flex-col-reverse text-black'>
+								<div
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold bg-cover bg-center'
+									style={{
+										backgroundImage: 'url(/pics/home/face.png)',
+									}}
+								></div>
+								<div className='aspect-square rounded-xl justify-around text-right flex flex-col p-3 lg:p-6 bg-gray-300 bg-cover bg-center'>
+									<div>
+										<div className='text-2xl'>e-mail</div>
+										<a
+											href='mailto:info@creagang.cz'
+											className='text-2xl font-bold'
+										>
+											info@creagang.cz
+										</a>
+									</div>
+									<div>
+										<div className='text-2xl'>telefon</div>
+
+										<a href='tel:+420605088050' className='text-2xl font-bold'>
+											+420 605 088 050
+										</a>
+									</div>
+
+									<div>
+										<div className='text-2xl'>adresa</div>
+
+										<div className='text-2xl font-bold'>
+											Křišťanova 1678/20
+											<br /> Praha 3 - Žižkov
+											<br /> 130 00
+										</div>
+									</div>
+
+									<div>
+										<div className='text-2xl'>fakturační údaje</div>
+
+										<div className='text-2xl font-bold'>IČO: 14151057</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

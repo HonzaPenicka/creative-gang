@@ -25,8 +25,9 @@ export default function Home() {
 									backgroundImage: 'url(/pics/home/face.png)',
 								}}
 							>
-								<div className='text-6xl lg:text-9xl font-bold text-white'>
-									crea gang
+								<div className='text-6xl lg:text-9xl font-bold text-white uppercase'>
+									crea
+									<br /> gang
 								</div>
 							</div>
 							<div className='aspect-video rounded-xl text-center p-6 lg:p-12 flex flex-col bg-gray-200 gap-12 lg:gap-24'>

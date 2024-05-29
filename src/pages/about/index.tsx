@@ -28,8 +28,8 @@ export default function AboutPage() {
 									backgroundImage: 'url(/pics/home/face.png)',
 								}}
 							>
-								<div className='text-6xl lg:text-9xl font-bold text-white'>
-									crea gang
+								<div className='text-6xl lg:text-9xl font-bold text-white uppercase'>
+									o nás
 								</div>
 							</div>
 							<div className='aspect-square lg:aspect-video rounded-xl justify-center text-center p-6 lg:p-12 flex flex-col bg-gray-200 gap-12 lg:gap-24'>
