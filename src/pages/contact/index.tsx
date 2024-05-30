@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react';
 
+import { Button } from '@/components/button';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { MobileMenu } from '@/components/mobile-menu';
@@ -39,8 +40,16 @@ export default function ContactPage() {
 									className=''
 								>
 									<div className='aspect-square rounded-xl p-3 lg:p-6 bg-gray-300 text-black flex flex-col gap-3 justify-between'>
-										<div className='text-2xl md:text-6xl font-bold'>
-											napište nám
+										<div className='flex gap-3 md:gap-6'>
+											<div className='text-2xl md:text-6xl font-bold'>
+												napište nám
+											</div>
+											<Button
+												type='submit'
+												additionalClassName='hover:border-blue-300'
+											>
+												Potvrdit
+											</Button>
 										</div>
 
 										<div>
@@ -105,7 +114,7 @@ export default function ContactPage() {
 													placeholder='Popište váš požadavek'
 													required
 													id='message'
-													className='py-0.5 p-3 w-full lg:w-full rounded-xl md:py-9 lg:text-xl outline-none bg-transparent border-black border hover:border-white'
+													className='py-0.5 p-3 w-full lg:w-full rounded-xl md:py-3 lg:text-xl outline-none bg-transparent border-black border hover:border-white'
 												/>
 											</div>
 										</div>

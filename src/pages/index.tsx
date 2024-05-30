@@ -32,7 +32,7 @@ export default function Home() {
 								</div>
 							</div>
 							<div className='aspect-square lg:aspect-video rounded-xl text-center p-6 lg:p-12 flex flex-col bg-gray-200 gap-12 lg:gap-24'>
-								<div className='text-xl lg:pt-24 lg:px-64 font-bold text-balance'>
+								<div className='text-xl md:text-3xl lg:pt-24 lg:px-64 font-bold text-balance'>
 									WEBOVÉ STRÁNKY | BRANDING | LOGA | VIZITKY PLAKÁTY | BANERY |
 									LETÁKY | UX/UI | SEO | SITE
 								</div>
@@ -54,7 +54,7 @@ export default function Home() {
 								</div>
 								<div className='lg:pt-24'>
 									<Button additionalClassName='border-green-300 hover:border-white'>
-										napište nám
+										<a href='/contact'>napište nám</a>
 									</Button>
 								</div>
 							</div>
