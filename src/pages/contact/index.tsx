@@ -39,12 +39,12 @@ export default function ContactPage() {
 									className=''
 								>
 									<div className='aspect-square rounded-xl p-3 lg:p-6 bg-gray-300 text-black flex flex-col gap-3 justify-between'>
-										<div className='text-2xl lg:text-6xl font-bold'>
+										<div className='text-2xl md:text-6xl font-bold'>
 											napište nám
 										</div>
 
 										<div>
-											<div className='text-base lg:text-2xl font-bold pb-1 lg:pb-3'>
+											<div className='text-base md:text-2xl font-semibold pb-1 lg:pb-3'>
 												jméno a příjmení
 											</div>
 
@@ -55,13 +55,13 @@ export default function ContactPage() {
 													required
 													placeholder='Jméno a příjmení'
 													id='name'
-													className='h-6 p-1 lg:w-1/2 rounded-xl lg:h-12 lg:text-xl'
+													className='py-0.5 p-3 lg:w-1/2 rounded-xl md:py-3 lg:text-xl outline-none border-black border hover:border-white bg-transparent'
 												/>
 											</div>
 										</div>
 
 										<div>
-											<div className='text-base lg:text-2xl font-bold pb-1 lg:pb-3'>
+											<div className='text-base md:text-2xl font-semibold pb-1 lg:pb-3'>
 												e-mail
 											</div>
 
@@ -72,13 +72,13 @@ export default function ContactPage() {
 													required
 													placeholder='E-mailová adresa'
 													id='email'
-													className='h-6 p-1 lg:w-1/2 rounded-xl lg:h-12 lg:text-xl'
+													className='py-0.5 p-3 lg:w-1/2 rounded-xl md:py-3 md:text-xl outline-none border-black border hover:border-white bg-transparent'
 												/>
 											</div>
 										</div>
 
 										<div>
-											<div className='text-base lg:text-2xl font-bold pb-1 lg:pb-3'>
+											<div className='text-base md:text-2xl font-semibold pb-1 lg:pb-3'>
 												telefonní číslo
 											</div>
 
@@ -89,13 +89,13 @@ export default function ContactPage() {
 													required
 													placeholder='Telefonní číslo'
 													id='phone'
-													className='h-6 p-1 lg:w-1/2 rounded-xl lg:h-12 lg:text-xl'
+													className='py-0.5 p-3 lg:w-1/2 rounded-xl md:py-3 md:text-xl outline-none border-black border hover:border-white bg-transparent'
 												/>
 											</div>
 										</div>
 
 										<div>
-											<div className='text-base lg:text-2xl font-bold pb-1 lg:pb-3'>
+											<div className='text-base md:text-2xl font-semibold pb-1 lg:pb-3'>
 												vaše zpráva
 											</div>
 
@@ -105,7 +105,7 @@ export default function ContactPage() {
 													placeholder='Popište váš požadavek'
 													required
 													id='message'
-													className='h-12 p-1 w-80 lg:w-full rounded-xl lg:h-36 lg:text-xl'
+													className='py-0.5 p-3 w-full lg:w-full rounded-xl md:py-9 lg:text-xl outline-none bg-transparent border-black border hover:border-white'
 												/>
 											</div>
 										</div>
@@ -129,26 +129,35 @@ export default function ContactPage() {
 								></div>
 								<div className='aspect-square rounded-xl justify-around text-right flex flex-col p-3 lg:p-6 bg-gray-300 bg-cover bg-center'>
 									<div>
-										<div className='text-2xl'>e-mail</div>
+										<div className='text-base md:text-2xl font-light'>
+											e-mail
+										</div>
 										<a
 											href='mailto:info@creagang.cz'
-											className='text-2xl font-bold'
+											className='text-base md:text-2xl font-semibold'
 										>
 											info@creagang.cz
 										</a>
 									</div>
 									<div>
-										<div className='text-2xl'>telefon</div>
+										<div className='text-base md:text-2xl font-light'>
+											telefon
+										</div>
 
-										<a href='tel:+420605088050' className='text-2xl font-bold'>
+										<a
+											href='tel:+420605088050'
+											className='text-base md:text-2xl font-semibold'
+										>
 											+420 605 088 050
 										</a>
 									</div>
 
 									<div>
-										<div className='text-2xl'>adresa</div>
+										<div className='text-base md:text-2xl font-light'>
+											adresa
+										</div>
 
-										<div className='text-2xl font-bold'>
+										<div className='text-base md:text-2xl font-semibold'>
 											Křišťanova 1678/20
 											<br /> Praha 3 - Žižkov
 											<br /> 130 00
@@ -156,9 +165,13 @@ export default function ContactPage() {
 									</div>
 
 									<div>
-										<div className='text-2xl'>fakturační údaje</div>
+										<div className='text-base md:text-2xl font-light'>
+											fakturační údaje
+										</div>
 
-										<div className='text-2xl font-bold'>IČO: 14151057</div>
+										<div className='text-base md:text-2xl font-semibold'>
+											IČO: 14151057
+										</div>
 									</div>
 								</div>
 							</div>

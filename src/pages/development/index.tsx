@@ -33,21 +33,24 @@ export default function DevPage() {
 									backgroundImage: 'url(/pics/home/face.png)',
 								}}
 							>
-								<div className='text-5xl lg:text-9xl font-bold text-white uppercase text-center'>
+								<div className='text-3xl lg:text-9xl font-bold text-white uppercase text-center'>
 									web & app
 									<br /> development
 								</div>
 							</div>
 
 							<div className='grid lg:grid-cols-2 gap-0.5'>
-								<div className='aspect-square rounded-xl justify-between flex flex-col p-3 lg:p-6 bg-gray-300 text-white bg-cover bg-center'>
-									<a href='http://www.pizzaspeed.cz' className='text-xl'>
+								<div className='aspect-square rounded-xl justify-between flex flex-col p-3 lg:p-6 bg-gray-300 bg-cover bg-center'>
+									<a
+										href='http://www.pizzaspeed.cz'
+										className='text-base md:text-xl hover:text-white'
+									>
 										www.pizzaspeed.cz
 									</a>
-									<div className='text-3xl lg:text-6xl font-bold'>
+									<div className='text-2xl lg:text-6xl font-bold'>
 										GRAFIKA & DESIGN
 									</div>
-									<div className='text-balance lg:pr-24 text-xl'>
+									<div className='text-balance lg:pr-24 text-base md:text-xl'>
 										Specializujeme se na vytváření jedinečných webových stránek,
 										grafického designu a brandingu.
 									</div>
@@ -67,21 +70,24 @@ export default function DevPage() {
 
 							<div className='lg:grid lg:grid-cols-2 gap-0.5 flex flex-col-reverse'>
 								<div
-									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
+									className='aspect-square rounded-xl justify-center flex items-center text-2xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
 									style={{
 										backgroundImage: 'url(/pics/home/face.png)',
 									}}
 								>
 									<div>GRAFIKA & DESIGN</div>
 								</div>
-								<div className='aspect-square rounded-xl justify-between text-right flex flex-col p-3 lg:p-6 bg-gray-300 text-white bg-cover bg-center'>
-									<a href='http://www.pizzaspeed.cz' className='text-xl'>
+								<div className='aspect-square rounded-xl justify-between md:text-right flex flex-col p-3 lg:p-6 bg-gray-300 bg-cover bg-center'>
+									<a
+										href='http://www.pizzaspeed.cz'
+										className='text-base md:text-xl hover:text-white'
+									>
 										www.pizzaspeed.cz
 									</a>
-									<div className='text-3xl lg:text-6xl font-bold'>
+									<div className='text-2xl lg:text-6xl font-bold'>
 										GRAFIKA & DESIGN
 									</div>
-									<div className='text-balance lg:pl-24 text-xl'>
+									<div className='text-balance lg:pl-24 text-base md:text-xl'>
 										Specializujeme se na vytváření jedinečných webových stránek,
 										grafického designu a brandingu.
 									</div>

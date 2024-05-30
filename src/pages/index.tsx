@@ -30,12 +30,12 @@ export default function Home() {
 									<br /> gang
 								</div>
 							</div>
-							<div className='aspect-video rounded-xl text-center p-6 lg:p-12 flex flex-col bg-gray-200 gap-12 lg:gap-24'>
-								<div className='text-3xl lg:pt-24 lg:px-64 font-bold'>
+							<div className='aspect-square lg:aspect-video rounded-xl text-center p-6 lg:p-12 flex flex-col bg-gray-200 gap-12 lg:gap-24'>
+								<div className='text-2xl lg:pt-24 lg:px-64 font-bold text-balance'>
 									WEBOVÉ STRÁNKY | BRANDING | LOGA | VIZITKY PLAKÁTY | BANERY |
 									LETÁKY | UX/UI | SEO | SITE
 								</div>
-								<div className='text-sm lg:text-xl lg:px-48'>
+								<div className='text-sm lg:text-xl lg:px-48 text-justify text-balance overflow-y-scroll h-auto'>
 									Specializujeme se na vytváření jedinečných webových stránek,
 									grafického designu a brandingu. Naše práce je zaměřena na
 									inovativní a moderní řešení, která přesně odpovídají potřebám
@@ -68,7 +68,10 @@ export default function Home() {
 										backgroundImage: 'url(/pics/home/face.png)',
 									}}
 								>
-									<div>WEB & APP DEVELOPMENT</div>
+									<div>
+										WEB & APP
+										<br /> DEVELOPMENT
+									</div>
 								</div>
 							</div>
 						</div>
