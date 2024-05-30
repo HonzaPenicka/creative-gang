@@ -31,8 +31,8 @@ export default function Home() {
 									<br /> gang
 								</div>
 							</div>
-							<div className='aspect-square md:aspect-video rounded-xl text-center p-6 md:p-12 flex flex-col bg-gray-200 gap-12 md:gap-24'>
-								<div className='text-base md:text-3xl md:pt-24 lg:px-64 font-bold text-balance'>
+							<div className='aspect-square md:aspect-video rounded-xl text-center p-6 md:p-12 flex flex-col bg-gray-200 gap-6 md:gap-24'>
+								<div className='text-base md:text-3xl lg:px-64 font-bold text-balance'>
 									WEBOVÉ STRÁNKY | BRANDING | LOGA | VIZITKY | PLAKÁTY | BANERY
 									| LETÁKY | UX/UI | SEO | SITE
 								</div>
@@ -52,7 +52,7 @@ export default function Home() {
 										</p>
 									</div>
 								</div>
-								<div className='md:pt-24'>
+								<div className='pt-6 md:pt-24'>
 									<Button additionalClassName='border-green-300 hover:border-white'>
 										<a href='/contact'>napište nám</a>
 									</Button>

@@ -32,8 +32,8 @@ export default function AboutPage() {
 									o nás
 								</div>
 							</div>
-							<div className='aspect-square lg:aspect-video rounded-xl justify-around text-center p-6 lg:p-12 flex flex-col bg-gray-200 gap-12 lg:gap-24'>
-								<div className='text-sm md:text-3xl lg:px-48 text-justify font-light md:font-normal'>
+							<div className='aspect-square lg:aspect-video rounded-xl justify-between text-center p-6 md:p-12 lg:p-24 flex flex-col bg-gray-200 gap-12 lg:gap-24'>
+								<div className='text-sm md:text-2xl text-justify font-light md:font-normal'>
 									Specializujeme se na vytváření jedinečných webových stránek,
 									grafického designu a brandingu. Naše práce je zaměřena na
 									inovativní a moderní řešení, která přesně odpovídají potřebám

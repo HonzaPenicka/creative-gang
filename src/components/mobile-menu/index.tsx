@@ -22,7 +22,7 @@ export const MobileMenu: FunctionComponent = () => {
 					<BurgerMenu />
 				</div>
 				{openMobileMenu && (
-					<div className='text-2xl gap-12 font-bold py-8 uppercase flex mt-24 text-right px-6 absolute top-0 flex-col z-20 bg-white'>
+					<div className='text-2xl md:text-3xl gap-12 font-bold py-8 uppercase flex mt-24 text-right px-6 absolute top-0 flex-col z-20 bg-white w-full'>
 						<Link
 							href='/design'
 							className='active:-translate-x-10 transition duration-300 delay-200 active:delay-200 active:underline active:underline-offset-4'
