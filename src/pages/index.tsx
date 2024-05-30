@@ -21,57 +21,59 @@ export default function Home() {
 					<div className='grid'>
 						<div className='flex flex-col gap-0.5'>
 							<div
-								className='aspect-square lg:aspect-video rounded-xl items-center justify-center flex bg-cover bg-center'
+								className='aspect-square md:aspect-video rounded-xl items-center justify-center flex bg-cover bg-center'
 								style={{
 									backgroundImage: 'url(/pics/home/face.png)',
 								}}
 							>
-								<div className='text-6xl lg:text-9xl font-bold text-white uppercase'>
+								<div className='text-6xl md:text-9xl font-bold text-white uppercase'>
 									crea
 									<br /> gang
 								</div>
 							</div>
-							<div className='aspect-square lg:aspect-video rounded-xl text-center p-6 lg:p-12 flex flex-col bg-gray-200 gap-12 lg:gap-24'>
-								<div className='text-xl md:text-3xl lg:pt-24 lg:px-64 font-bold text-balance'>
-									WEBOVÉ STRÁNKY | BRANDING | LOGA | VIZITKY PLAKÁTY | BANERY |
-									LETÁKY | UX/UI | SEO | SITE
+							<div className='aspect-square md:aspect-video rounded-xl text-center p-6 md:p-12 flex flex-col bg-gray-200 gap-12 md:gap-24'>
+								<div className='text-base md:text-3xl md:pt-24 lg:px-64 font-bold text-balance'>
+									WEBOVÉ STRÁNKY | BRANDING | LOGA | VIZITKY | PLAKÁTY | BANERY
+									| LETÁKY | UX/UI | SEO | SITE
 								</div>
 								<div>
-									<div className='text-sm lg:text-xl lg:px-48 text-justify text-balance'>
+									<div className='text-sm md:text-xl lg:px-48 text-justify'>
 										Specializujeme se na vytváření jedinečných webových stránek,
-										grafického designu a brandingu. Naše práce je zaměřena na
-										inovativní a moderní řešení, která přesně odpovídají
-										potřebám našich klientů.
-									</div>
-									<div className='hidden lg:flex lg:text-xl lg:px-48 text-justify text-balance'>
-										Prohlédněte si naše portfolio a přesvědčte se sami.
-										Specializujeme se na vytváření jedinečných webových stránek,
-										grafického designu a brandingu. Naše práce je zaměřena na
-										inovativní a moderní řešení, která přesně odpovídají
-										potřebám našich klientů. Prohlédněte si naše portfolio a
-										přesvědčte se sami.
+										kreativního grafického designu a profesionálního brandingu.
+										Naše práce se zaměřuje na inovativní a moderní řešení, která
+										přesně odpovídají potřebám našich klientů.
+										<p className='hidden md:flex'>
+											Prohlédněte si naše portfolio a přesvědčte se sami.
+											Specializujeme se na vytváření jedinečných webových
+											stránek, kreativního grafického designu a profesionálního
+											brandingu. Naše práce se zaměřuje na inovativní a moderní
+											řešení, která přesně odpovídají potřebám našich klientů.
+											Prohlédněte si naše portfolio a přesvědčte se sami.
+										</p>
 									</div>
 								</div>
-								<div className='lg:pt-24'>
+								<div className='md:pt-24'>
 									<Button additionalClassName='border-green-300 hover:border-white'>
 										<a href='/contact'>napište nám</a>
 									</Button>
 								</div>
 							</div>
 
-							<div className='grid lg:grid-cols-2 gap-0.5'>
+							<div className='grid md:grid-cols-2 gap-0.5'>
 								<Link
 									href='/design'
-									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-green-300 hover:brightness-125'
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl md:text-4xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-green-300 hover:brightness-125'
 									style={{
 										backgroundImage: 'url(/pics/home/face.png)',
 									}}
 								>
-									<div>GRAFIKA & DESIGN</div>
+									<div>
+										GRAFIKA <br /> & DESIGN
+									</div>
 								</Link>
 								<Link
 									href='/development'
-									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-green-300 hover:brightness-125'
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl md:text-4xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-green-300 hover:brightness-125'
 									style={{
 										backgroundImage: 'url(/pics/home/face.png)',
 									}}

@@ -45,12 +45,14 @@ export default function ContactPage() {
 												napište
 												<br /> nám
 											</div>
-											<Button
-												type='submit'
-												additionalClassName='hover:border-blue-300'
-											>
-												Potvrdit
-											</Button>
+											<div>
+												<Button
+													type='submit'
+													additionalClassName='hover:border-blue-300'
+												>
+													Odeslat
+												</Button>
+											</div>
 										</div>
 
 										<div>

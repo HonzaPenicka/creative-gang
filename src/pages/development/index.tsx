@@ -33,7 +33,7 @@ export default function DevPage() {
 									backgroundImage: 'url(/pics/dev/head.png)',
 								}}
 							>
-								<div className='text-5xl md:text-7xl lg:text-9xl font-bold text-white uppercase text-center'>
+								<div className='text-4xl md:text-7xl lg:text-9xl font-bold text-white uppercase text-center'>
 									web & app
 									<br /> development
 								</div>
@@ -43,7 +43,7 @@ export default function DevPage() {
 								<div className='aspect-square rounded-xl justify-between flex flex-col p-3 lg:p-6 bg-gray-300 bg-cover bg-center'>
 									<a
 										href='http://www.securitynvd.cz'
-										className='text-2xl md:text-3xl hover:text-white'
+										className='text-xl md:text-3xl hover:text-white'
 									>
 										www.securitynvd.cz
 									</a>
@@ -52,7 +52,7 @@ export default function DevPage() {
 										<br />
 										security
 									</div>
-									<div className='text-balance lg:pr-24 text-2xl md:text-3xl font-light'>
+									<div className='text-balance lg:pr-24 text-xl md:text-3xl font-light'>
 										Webové stránky pro bezpečnostní agenturu v Praze a okolí.
 									</div>
 								</div>
@@ -83,7 +83,7 @@ export default function DevPage() {
 								<div className='aspect-square rounded-xl justify-between md:text-right flex flex-col p-3 lg:p-6 bg-gray-300 bg-cover bg-center'>
 									<a
 										href='http://www.uklidnvd.cz'
-										className='text-2xl md:text-4xl hover:text-white'
+										className='text-xl md:text-4xl hover:text-white'
 									>
 										www.uklidnvd.cz
 									</a>
@@ -94,7 +94,7 @@ export default function DevPage() {
 										úklid
 									</div>
 
-									<div className='text-balance lg:pl-24 text-2xl md:text-3xl'>
+									<div className='text-balance lg:pl-24 text-xl md:text-3xl'>
 										Webové stránky pro úklidovou angenturu v Praze a okolí.
 									</div>
 								</div>
