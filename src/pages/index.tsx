@@ -5,6 +5,7 @@ import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { MobileMenu } from '@/components/mobile-menu';
 import { Analytics } from '@vercel/analytics/react';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -59,16 +60,18 @@ export default function Home() {
 							</div>
 
 							<div className='grid lg:grid-cols-2 gap-0.5'>
-								<div
-									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
+								<Link
+									href='/design'
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-green-300 hover:contrast-75'
 									style={{
 										backgroundImage: 'url(/pics/home/face.png)',
 									}}
 								>
 									<div>GRAFIKA & DESIGN</div>
-								</div>
-								<div
-									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
+								</Link>
+								<Link
+									href='/development'
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-green-300 hover:contrast-75'
 									style={{
 										backgroundImage: 'url(/pics/home/face.png)',
 									}}
@@ -77,7 +80,7 @@ export default function Home() {
 										WEB & APP
 										<br /> DEVELOPMENT
 									</div>
-								</div>
+								</Link>
 							</div>
 						</div>
 					</div>
