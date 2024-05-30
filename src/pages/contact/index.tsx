@@ -40,9 +40,10 @@ export default function ContactPage() {
 									className=''
 								>
 									<div className='aspect-square rounded-xl p-3 lg:p-6 bg-gray-300 text-black flex flex-col gap-3 justify-between'>
-										<div className='flex gap-3 md:gap-6'>
+										<div className='flex justify-between'>
 											<div className='text-2xl md:text-6xl font-bold'>
-												napište nám
+												napište
+												<br /> nám
 											</div>
 											<Button
 												type='submit'
