@@ -62,7 +62,7 @@ export default function Home() {
 							<div className='grid lg:grid-cols-2 gap-0.5'>
 								<Link
 									href='/design'
-									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-green-300 hover:contrast-75'
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-green-300 hover:brightness-125'
 									style={{
 										backgroundImage: 'url(/pics/home/face.png)',
 									}}
@@ -71,12 +71,12 @@ export default function Home() {
 								</Link>
 								<Link
 									href='/development'
-									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-green-300 hover:contrast-75'
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-green-300 hover:brightness-125'
 									style={{
 										backgroundImage: 'url(/pics/home/face.png)',
 									}}
 								>
-									<div>
+									<div className=''>
 										WEB & APP
 										<br /> DEVELOPMENT
 									</div>

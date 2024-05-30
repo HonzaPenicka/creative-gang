@@ -56,9 +56,7 @@ export default function AboutPage() {
 								style={{
 									backgroundImage: 'url(/pics/home/face.png)',
 								}}
-							>
-								<div>WEB & APP DEVELOPMENT</div>
-							</div>
+							></div>
 						</div>
 					</div>
 				</div>

@@ -30,10 +30,10 @@ export default function DevPage() {
 							<div
 								className='aspect-square lg:aspect-video rounded-xl items-center justify-center flex bg-cover bg-center'
 								style={{
-									backgroundImage: 'url(/pics/home/face.png)',
+									backgroundImage: 'url(/pics/dev/head.png)',
 								}}
 							>
-								<div className='text-3xl lg:text-9xl font-bold text-white uppercase text-center'>
+								<div className='text-5xl md:text-7xl lg:text-9xl font-bold text-white uppercase text-center'>
 									web & app
 									<br /> development
 								</div>
@@ -42,26 +42,27 @@ export default function DevPage() {
 							<div className='grid lg:grid-cols-2 gap-0.5'>
 								<div className='aspect-square rounded-xl justify-between flex flex-col p-3 lg:p-6 bg-gray-300 bg-cover bg-center'>
 									<a
-										href='http://www.pizzaspeed.cz'
-										className='text-base md:text-xl hover:text-white'
+										href='http://www.securitynvd.cz'
+										className='text-2xl md:text-3xl hover:text-white'
 									>
-										www.pizzaspeed.cz
+										www.securitynvd.cz
 									</a>
-									<div className='text-2xl lg:text-6xl font-bold'>
-										GRAFIKA & DESIGN
+									<div className='text-4xl md:text-6xl font-bold uppercase'>
+										nvd facility
+										<br />
+										security
 									</div>
-									<div className='text-balance lg:pr-24 text-base md:text-xl'>
-										Specializujeme se na vytváření jedinečných webových stránek,
-										grafického designu a brandingu.
+									<div className='text-balance lg:pr-24 text-2xl md:text-3xl font-light'>
+										Webové stránky pro bezpečnostní agenturu v Praze a okolí.
 									</div>
 								</div>
 								<div
 									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
 									style={{
-										backgroundImage: 'url(/pics/home/face.png)',
+										backgroundImage: 'url(/pics/dev/camera.png)',
 									}}
 								>
-									<div>
+									<div className='text-4xl lg:text-6xl uppercase'>
 										WEB & APP
 										<br /> DEVELOPMENT
 									</div>
@@ -70,26 +71,31 @@ export default function DevPage() {
 
 							<div className='lg:grid lg:grid-cols-2 gap-0.5 flex flex-col-reverse'>
 								<div
-									className='aspect-square rounded-xl justify-center flex items-center text-2xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
+									className='aspect-square rounded-xl justify-center flex items-center text-center font-bold text-white bg-cover bg-center'
 									style={{
-										backgroundImage: 'url(/pics/home/face.png)',
+										backgroundImage: 'url(/pics/dev/clean.png)',
 									}}
 								>
-									<div>GRAFIKA & DESIGN</div>
+									<div className='text-4xl lg:text-6xl uppercase'>
+										GRAFIKA <br />& DESIGN
+									</div>
 								</div>
 								<div className='aspect-square rounded-xl justify-between md:text-right flex flex-col p-3 lg:p-6 bg-gray-300 bg-cover bg-center'>
 									<a
-										href='http://www.pizzaspeed.cz'
-										className='text-base md:text-xl hover:text-white'
+										href='http://www.uklidnvd.cz'
+										className='text-2xl md:text-4xl hover:text-white'
 									>
-										www.pizzaspeed.cz
+										www.uklidnvd.cz
 									</a>
-									<div className='text-2xl lg:text-6xl font-bold'>
-										GRAFIKA & DESIGN
+
+									<div className='text-4xl md:text-6xl font-bold uppercase'>
+										nvd facility
+										<br />
+										úklid
 									</div>
-									<div className='text-balance lg:pl-24 text-base md:text-xl'>
-										Specializujeme se na vytváření jedinečných webových stránek,
-										grafického designu a brandingu.
+
+									<div className='text-balance lg:pl-24 text-2xl md:text-3xl'>
+										Webové stránky pro úklidovou angenturu v Praze a okolí.
 									</div>
 								</div>
 							</div>
