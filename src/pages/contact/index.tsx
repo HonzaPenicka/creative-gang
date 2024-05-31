@@ -26,7 +26,7 @@ export default function ContactPage() {
 							<div
 								className='aspect-square lg:aspect-video rounded-xl items-center justify-center flex bg-cover bg-center'
 								style={{
-									backgroundImage: 'url(/pics/home/face.png)',
+									backgroundImage: 'url(/pics/contact/head.png)',
 								}}
 							>
 								<div className='text-6xl lg:text-9xl font-bold text-white uppercase'>
@@ -48,7 +48,7 @@ export default function ContactPage() {
 											<div>
 												<Button
 													type='submit'
-													additionalClassName='hover:border-blue-300'
+													additionalClassName='hover:border-[#D4EE4C]'
 												>
 													Odeslat
 												</Button>
@@ -67,7 +67,7 @@ export default function ContactPage() {
 													required
 													placeholder='Jméno a příjmení'
 													id='name'
-													className='py-0.5 p-3 lg:w-1/2 rounded-xl md:py-3 lg:text-xl outline-none border-black border hover:border-white bg-transparent'
+													className='py-0.5 p-3 lg:w-1/2 rounded-xl md:py-3 lg:text-xl outline-none border-black border hover:border-[#D4EE4C] bg-transparent'
 												/>
 											</div>
 										</div>
@@ -84,7 +84,7 @@ export default function ContactPage() {
 													required
 													placeholder='E-mailová adresa'
 													id='email'
-													className='py-0.5 p-3 lg:w-1/2 rounded-xl md:py-3 md:text-xl outline-none border-black border hover:border-white bg-transparent'
+													className='py-0.5 p-3 lg:w-1/2 rounded-xl md:py-3 md:text-xl outline-none border-black border hover:border-[#D4EE4C] bg-transparent'
 												/>
 											</div>
 										</div>
@@ -101,7 +101,7 @@ export default function ContactPage() {
 													required
 													placeholder='Telefonní číslo'
 													id='phone'
-													className='py-0.5 p-3 lg:w-1/2 rounded-xl md:py-3 md:text-xl outline-none border-black border hover:border-white bg-transparent'
+													className='py-0.5 p-3 lg:w-1/2 rounded-xl md:py-3 md:text-xl outline-none border-black border hover:border-[#D4EE4C] bg-transparent'
 												/>
 											</div>
 										</div>
@@ -117,7 +117,7 @@ export default function ContactPage() {
 													placeholder='Popište váš požadavek'
 													required
 													id='message'
-													className='py-0.5 p-3 w-full lg:w-full rounded-xl md:py-3 lg:text-xl outline-none bg-transparent border-black border hover:border-white'
+													className='py-0.5 p-3 w-full lg:w-full rounded-xl md:py-3 lg:text-xl outline-none bg-transparent border-black border hover:border-[#D4EE4C]'
 												/>
 											</div>
 										</div>
@@ -127,7 +127,7 @@ export default function ContactPage() {
 								<div
 									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
 									style={{
-										backgroundImage: 'url(/pics/home/face.png)',
+										backgroundImage: 'url(/pics/contact/first.png)',
 									}}
 								></div>
 							</div>
@@ -136,7 +136,7 @@ export default function ContactPage() {
 								<div
 									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold bg-cover bg-center'
 									style={{
-										backgroundImage: 'url(/pics/home/face.png)',
+										backgroundImage: 'url(/pics/contact/sec.png)',
 									}}
 								></div>
 								<div className='aspect-square rounded-xl justify-around text-right flex flex-col p-3 lg:p-6 bg-gray-300 bg-cover bg-center'>
@@ -146,7 +146,7 @@ export default function ContactPage() {
 										</div>
 										<a
 											href='mailto:info@creagang.cz'
-											className='text-base md:text-2xl font-semibold'
+											className='text-base md:text-2xl font-semibold hover:text-[#D4EE4C]'
 										>
 											info@creagang.cz
 										</a>
@@ -158,7 +158,7 @@ export default function ContactPage() {
 
 										<a
 											href='tel:+420605088050'
-											className='text-base md:text-2xl font-semibold'
+											className='text-base md:text-2xl font-semibold hover:text-[#D4EE4C]'
 										>
 											+420 605 088 050
 										</a>
