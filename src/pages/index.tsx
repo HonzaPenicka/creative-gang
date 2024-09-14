@@ -23,7 +23,7 @@ export default function Home() {
 							<div
 								className='aspect-square md:aspect-video rounded-xl items-center justify-center flex bg-cover bg-center'
 								style={{
-									backgroundImage: 'url(/pics/home/face.png)',
+									backgroundImage: 'url(/pics/home/face.jpg)',
 								}}
 							>
 								<div className='text-6xl md:text-9xl font-bold text-white uppercase'>
@@ -53,7 +53,7 @@ export default function Home() {
 									</div>
 								</div>
 								<div className='pt-6 md:pt-24'>
-									<Button additionalClassName='border-green-300 hover:border-white'>
+									<Button additionalClassName='border-[#F8F85A] hover:border-white'>
 										<a href='/contact'>napište nám</a>
 									</Button>
 								</div>
@@ -62,9 +62,9 @@ export default function Home() {
 							<div className='grid md:grid-cols-2 gap-0.5'>
 								<Link
 									href='/design'
-									className='aspect-square rounded-xl justify-center flex items-center text-3xl md:text-4xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-green-300 hover:brightness-125'
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl md:text-4xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-[#F8F85A] hover:brightness-125'
 									style={{
-										backgroundImage: 'url(/pics/home/face.png)',
+										backgroundImage: 'url(/pics/home/face.jpg)',
 									}}
 								>
 									<div>
@@ -73,9 +73,9 @@ export default function Home() {
 								</Link>
 								<Link
 									href='/development'
-									className='aspect-square rounded-xl justify-center flex items-center text-3xl md:text-4xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-green-300 hover:brightness-125'
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl md:text-4xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-[#F8F85A] hover:brightness-125'
 									style={{
-										backgroundImage: 'url(/pics/home/face.png)',
+										backgroundImage: 'url(/pics/home/face.jpg)',
 									}}
 								>
 									<div className=''>

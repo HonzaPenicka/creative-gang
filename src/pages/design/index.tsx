@@ -25,7 +25,7 @@ export default function DesignPage() {
 							<div
 								className='aspect-square lg:aspect-video rounded-xl items-center justify-center flex bg-cover bg-center'
 								style={{
-									backgroundImage: 'url(/pics/home/face.png)',
+									backgroundImage: 'url(/pics/home/face.jpg)',
 								}}
 							>
 								<div className='text-3xl lg:text-9xl font-bold uppercase text-white'>
@@ -53,7 +53,7 @@ export default function DesignPage() {
 								<div
 									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
 									style={{
-										backgroundImage: 'url(/pics/home/face.png)',
+										backgroundImage: 'url(/pics/home/face.jpg)',
 									}}
 								>
 									<div>WEB & APP DEVELOPMENT</div>
@@ -64,7 +64,7 @@ export default function DesignPage() {
 								<div
 									className='aspect-square rounded-xl justify-center flex items-center text-2xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
 									style={{
-										backgroundImage: 'url(/pics/home/face.png)',
+										backgroundImage: 'url(/pics/home/face.jpg)',
 									}}
 								>
 									<div>GRAFIKA & DESIGN</div>

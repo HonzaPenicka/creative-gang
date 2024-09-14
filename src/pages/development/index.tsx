@@ -30,7 +30,7 @@ export default function DevPage() {
 							<div
 								className='aspect-square lg:aspect-video rounded-xl items-center justify-center flex bg-cover bg-center'
 								style={{
-									backgroundImage: 'url(/pics/dev/head.png)',
+									backgroundImage: 'url(/pics/dev/head.jpg)',
 								}}
 							>
 								<div className='text-4xl md:text-7xl lg:text-9xl font-bold text-white uppercase text-center'>
@@ -40,10 +40,10 @@ export default function DevPage() {
 							</div>
 
 							<div className='grid lg:grid-cols-2 gap-0.5'>
-								<div className='aspect-square rounded-xl justify-between flex flex-col p-3 lg:p-6 bg-gray-300 bg-cover bg-center'>
+								<div className='aspect-square rounded-xl justify-between flex flex-col p-3 lg:p-6 bg-gray-200 bg-cover bg-center  hover:drop-shadow-xl hover:ring-2 hover:ring-[#c82b51] hover:brightness-125'>
 									<a
 										href='http://www.securitynvd.cz'
-										className='text-xl md:text-3xl hover:text-white'
+										className='text-xl md:text-3xl font-medium hover:text-white'
 									>
 										www.securitynvd.cz
 									</a>
@@ -57,9 +57,9 @@ export default function DevPage() {
 									</div>
 								</div>
 								<div
-									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-[#c82b51] hover:brightness-125'
 									style={{
-										backgroundImage: 'url(/pics/dev/camera.png)',
+										backgroundImage: 'url(/pics/dev/camera.jpg)',
 									}}
 								>
 									<div className='text-4xl lg:text-6xl uppercase'>
@@ -71,19 +71,19 @@ export default function DevPage() {
 
 							<div className='lg:grid lg:grid-cols-2 gap-0.5 flex flex-col-reverse'>
 								<div
-									className='aspect-square rounded-xl justify-center flex items-center text-center font-bold text-white bg-cover bg-center'
+									className='aspect-square rounded-xl justify-center flex items-center text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-[#c82b51] hover:brightness-125'
 									style={{
-										backgroundImage: 'url(/pics/dev/clean.png)',
+										backgroundImage: 'url(/pics/dev/clean.jpg)',
 									}}
 								>
 									<div className='text-4xl lg:text-6xl uppercase'>
 										GRAFIKA <br />& DESIGN
 									</div>
 								</div>
-								<div className='aspect-square rounded-xl justify-between md:text-right flex flex-col p-3 lg:p-6 bg-gray-300 bg-cover bg-center'>
+								<div className='aspect-square rounded-xl justify-between md:text-right flex flex-col p-3 lg:p-6 bg-gray-200 bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-[#c82b51] hover:brightness-125'>
 									<a
 										href='http://www.uklidnvd.cz'
-										className='text-xl md:text-4xl hover:text-white'
+										className='text-xl md:text-3xl font-medium hover:text-white'
 									>
 										www.uklidnvd.cz
 									</a>

@@ -25,7 +25,7 @@ export default function AboutPage() {
 							<div
 								className='aspect-square lg:aspect-video rounded-xl items-center justify-center flex bg-cover bg-center'
 								style={{
-									backgroundImage: 'url(/pics/about/head.png)',
+									backgroundImage: 'url(/pics/about/head.jpg)',
 								}}
 							>
 								<div className='text-6xl lg:text-9xl font-bold text-white uppercase'>
@@ -54,7 +54,7 @@ export default function AboutPage() {
 							<div
 								className='aspect-square lg:aspect-video rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center'
 								style={{
-									backgroundImage: 'url(/pics/about/mountain.png)',
+									backgroundImage: 'url(/pics/about/mountain.jpg)',
 								}}
 							></div>
 						</div>
