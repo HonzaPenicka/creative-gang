@@ -15,7 +15,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
 }) => {
 	return (
 		<button
-			className={`py-3 lg:px-12 px-6 text-2xl lg:text-4xl rounded-full uppercase font-medium border-4 ${additionalClassName}`}
+			className={` px-4 py-2 md:px-8 md:py-č text-2xl lg:text-4xl rounded-full uppercase font-medium border-4 ${additionalClassName}`}
 			type={type}
 		>
 			{children}

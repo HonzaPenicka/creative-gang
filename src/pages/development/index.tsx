@@ -19,12 +19,12 @@ export default function DevPage() {
 
 	return (
 		<div className='bg-white'>
-			<main className='container mx-auto h-auto p-3 text-black'>
-				<MobileMenu />
+			<MobileMenu />
 
+			<main className='container mx-auto h-auto px-3 text-black'>
 				<Header />
 
-				<div className='bg-white pt-28'>
+				<div className='bg-white pt-28 md:pt-36'>
 					<div className='grid'>
 						<div className='flex flex-col gap-0.5'>
 							<div
@@ -40,10 +40,10 @@ export default function DevPage() {
 							</div>
 
 							<div className='grid lg:grid-cols-2 gap-0.5'>
-								<div className='aspect-square rounded-xl justify-between flex flex-col p-3 lg:p-6 bg-gray-200 bg-cover bg-center  hover:drop-shadow-xl hover:ring-2 hover:ring-[#c82b51] hover:brightness-125'>
+								<div className='aspect-square rounded-xl justify-between flex flex-col p-3 lg:p-6 bg-gray-200 bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-[#d8017b]'>
 									<a
 										href='http://www.securitynvd.cz'
-										className='text-xl md:text-3xl font-medium hover:text-white'
+										className='text-xl md:text-3xl font-medium hover:underline hover:underline-offset-2 hover:decoration-[#d8017b]'
 									>
 										www.securitynvd.cz
 									</a>
@@ -57,7 +57,7 @@ export default function DevPage() {
 									</div>
 								</div>
 								<div
-									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-[#c82b51] hover:brightness-125'
+									className='aspect-square rounded-xl justify-center flex items-center text-3xl lg:text-6xl text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-[#d8017b] hover:brightness-125'
 									style={{
 										backgroundImage: 'url(/pics/dev/camera.jpg)',
 									}}
@@ -71,7 +71,7 @@ export default function DevPage() {
 
 							<div className='lg:grid lg:grid-cols-2 gap-0.5 flex flex-col-reverse'>
 								<div
-									className='aspect-square rounded-xl justify-center flex items-center text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-[#c82b51] hover:brightness-125'
+									className='aspect-square rounded-xl justify-center flex items-center text-center font-bold text-white bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-[#d8017b] hover:brightness-125'
 									style={{
 										backgroundImage: 'url(/pics/dev/clean.jpg)',
 									}}
@@ -80,10 +80,10 @@ export default function DevPage() {
 										GRAFIKA <br />& DESIGN
 									</div>
 								</div>
-								<div className='aspect-square rounded-xl justify-between md:text-right flex flex-col p-3 lg:p-6 bg-gray-200 bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-[#c82b51] hover:brightness-125'>
+								<div className='aspect-square rounded-xl justify-between md:text-right flex flex-col p-3 lg:p-6 bg-gray-200 bg-cover bg-center hover:drop-shadow-xl hover:ring-2 hover:ring-[#c82a7a]'>
 									<a
 										href='http://www.uklidnvd.cz'
-										className='text-xl md:text-3xl font-medium hover:text-white'
+										className='text-xl md:text-3xl font-medium hover:decoration-[#d8017b] hover:underline-offset-2 hover:underline'
 									>
 										www.uklidnvd.cz
 									</a>

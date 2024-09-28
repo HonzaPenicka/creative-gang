@@ -14,12 +14,12 @@ export default function DesignPage() {
 
 	return (
 		<div className='bg-white'>
-			<main className='container mx-auto h-auto p-3 text-black'>
-				<MobileMenu />
+			<MobileMenu />
 
+			<main className='container mx-auto h-auto px-3 text-black'>
 				<Header />
 
-				<div className='bg-white pt-28'>
+				<div className='bg-white pt-28 md:pt-36'>
 					<div className='grid'>
 						<div className='flex flex-col gap-0.5'>
 							<div
@@ -28,7 +28,7 @@ export default function DesignPage() {
 									backgroundImage: 'url(/pics/home/face.jpg)',
 								}}
 							>
-								<div className='text-3xl lg:text-9xl font-bold uppercase text-white'>
+								<div className='text-4xl md:text-7xl lg:text-9xl font-bold text-white uppercase text-center'>
 									grafika
 									<br /> & design
 								</div>
