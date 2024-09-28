@@ -17,7 +17,7 @@ export default function Home() {
 
 				<Header />
 
-				<div className='bg-white'>
+				<div className='bg-white pt-28'>
 					<div className='grid'>
 						<div className='flex flex-col gap-0.5'>
 							<div
@@ -31,33 +31,29 @@ export default function Home() {
 									<br /> gang
 								</div>
 							</div>
-							<div className='aspect-square md:aspect-video rounded-xl text-center p-6 md:p-12 flex flex-col bg-gray-200 gap-6 md:gap-24'>
-								<div className='text-base md:text-3xl lg:px-64 font-bold text-balance'>
-									WEBOVÉ STRÁNKY | BRANDING | LOGA | VIZITKY | PLAKÁTY | BANERY
-									| LETÁKY | UX/UI | SEO | SITE
-								</div>
-								<div>
-									<div className='text-sm md:text-xl lg:px-48 text-justify'>
-										Specializujeme se na vytváření jedinečných webových stránek,
-										kreativního grafického designu a profesionálního brandingu.
-										Naše práce se zaměřuje na inovativní a moderní řešení, která
-										přesně odpovídají potřebám našich klientů.
-										<p className='hidden md:flex'>
-											Prohlédněte si naše portfolio a přesvědčte se sami.
-											Specializujeme se na vytváření jedinečných webových
-											stránek, kreativního grafického designu a profesionálního
-											brandingu. Naše práce se zaměřuje na inovativní a moderní
-											řešení, která přesně odpovídají potřebám našich klientů.
-											Prohlédněte si naše portfolio a přesvědčte se sami.
-										</p>
+							<div className="relative rounded-3xl p-8 md:p-16 bg-gradient-to-r from-[#EEEE57] to-[#F8C65A] shadow-lg text-white overflow-hidden">
+								<div className="absolute inset-0 opacity-80 pointer-events-none rounded-3xl"></div>
+									<div className="relative z-10 flex flex-col gap-8 md:gap-16 items-center text-center">
+										<div className="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-wide animate-text">
+											WEB DESIGN | BRANDING | DEVELOPMENT | UX/UI | SEO
+										</div>
+
+										<div className="text-base md:text-xl lg:text-2xl max-w-4xl leading-relaxed">
+										Vytvářím jedinečné webové stránky a vizuální identity, které oživí vaše nápady a zaujmou vaše zákazníky. Od inovativního grafického designu po moderní vývoj webových aplikací – mám řešení přesně na míru vašim potřebám.
+										</div>
+
+										<div className="text-sm md:text-lg lg:text-xl hidden md:flex mt-6 opacity-80">
+										Prohlédněte si mé portfolio, kde najdete ukázky prací zahrnující kreativní návrhy a inovativní řešení na míru.
+										</div>
+
+										<div className="pt-6 md:pt-12">
+										<Button additionalClassName="border-transparent bg-white text-purple-600 hover:bg-purple-500 hover:text-white transition-all transform hover:scale-105 shadow-lg">
+											<a href="/contact">Napište mi</a>
+										</Button>
 									</div>
 								</div>
-								<div className='pt-6 md:pt-24'>
-									<Button additionalClassName='border-[#F8F85A] hover:border-white'>
-										<a href='/contact'>napište nám</a>
-									</Button>
-								</div>
 							</div>
+
 
 							<div className='grid md:grid-cols-2 gap-0.5'>
 								<Link
@@ -78,7 +74,7 @@ export default function Home() {
 										backgroundImage: 'url(/pics/home/face.jpg)',
 									}}
 								>
-									<div className=''>
+									<div>
 										WEB & APP
 										<br /> DEVELOPMENT
 									</div>

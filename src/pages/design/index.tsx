@@ -19,7 +19,7 @@ export default function DesignPage() {
 
 				<Header />
 
-				<div className='bg-white'>
+				<div className='bg-white pt-28'>
 					<div className='grid'>
 						<div className='flex flex-col gap-0.5'>
 							<div
