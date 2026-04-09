@@ -7,7 +7,7 @@ import { MobileMenu } from '@/components/mobile-menu';
 import { Analytics } from '@vercel/analytics/react';
 import Link from 'next/link';
 
-const inter = Inter({ subsets: ['latin'] });
+/* const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
 	return (
@@ -89,6 +89,47 @@ export default function Home() {
 
 				<Footer />
 				<Analytics />
+			</main>
+		</div>
+	);
+}
+*/
+
+export default function MaintenancePage() {
+	const year = new Date().getFullYear();
+
+	return (
+		<div className='min-h-screen bg-slate-950 text-slate-200 flex items-center justify-center px-4'>
+			<main className='text-center max-w-lg w-full'>
+				{/* Logo / Brand */}
+				<div className='mb-8'>
+					<h1 className='text-4xl sm:text-5xl font-bold text-white tracking-tight'>
+						CREAGANG
+					</h1>
+				</div>
+
+				{/* Card */}
+				<div className='bg-slate-900/60 backdrop-blur-md border border-slate-800 rounded-2xl p-8 shadow-xl'>
+					<h2 className='text-2xl sm:text-3xl font-semibold text-white mb-4'>
+						The website is currently under maintenance
+					</h2>
+
+					<p className='text-slate-400 mb-6 leading-relaxed'>
+						We are working on improvements and will be back soon.
+						<br />
+						Thank you for your patience.
+					</p>
+
+					{/* Spinner */}
+					<div className='flex justify-center mb-6'>
+						<div className='w-8 h-8 border-4 border-slate-700 border-t-white rounded-full animate-spin' />
+					</div>
+
+					{/* Contact */}
+				</div>
+
+				{/* Footer */}
+				<div className='mt-8 text-xs text-slate-600'>© {year} Creagang</div>
 			</main>
 		</div>
 	);
