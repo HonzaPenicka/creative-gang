@@ -22,9 +22,10 @@ export function middleware(request: NextRequest) {
 	if (pathnameHasLocale) return NextResponse.next();
 
 	const locale = getLocale(request);
-	request.nextUrl.pathname = `/${request.nextUrl}`;
+	request.nextUrl.pathname = `/${locale}${pathname}`;
+	return NextResponse.redirect(request.nextUrl);
 }
 
 export const config = {
-	matcher: ['/((?!_next).*'],
+	matcher: ['/((?!_next).*)'],
 };
